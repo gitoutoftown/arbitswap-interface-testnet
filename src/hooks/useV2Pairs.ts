@@ -82,8 +82,8 @@ export function useVaultTVL(): TVLInfo[] {
   const arbPrice = priceData?.['arb']
   const ribPrice = priceData?.['rib']
 
-  const farmingPools = Object.keys(VAULTS[ChainId.ARBITRUM_SEPOLIA]).map((key) => {
-    return { ...VAULTS[ChainId.ARBITRUM_SEPOLIA][key] }
+  const farmingPools = Object.keys(VAULTS[ChainId.ARBITCHAIN_SEPOLIA]).map((key) => {
+    return { ...VAULTS[ChainId.ARBITCHAIN_SEPOLIA][key] }
   })
 
   const singlePools = farmingPools.filter((r) => !r.token1)
@@ -94,10 +94,10 @@ export function useVaultTVL(): TVLInfo[] {
   const results = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'getReserves')
   const totalSupply = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'totalSupply')
   const distributorBalance = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'balanceOf', [
-    ASWAP_VAULT_ADDRESS[ChainId.ARBITRUM_SEPOLIA],
+    ASWAP_VAULT_ADDRESS[ChainId.ARBITCHAIN_SEPOLIA],
   ])
   const distributorBalanceSingle = useMultipleContractSingleData(singleAddresses, PAIR_INTERFACE, 'balanceOf', [
-    ASWAP_VAULT_ADDRESS[ChainId.ARBITRUM_SEPOLIA],
+    ASWAP_VAULT_ADDRESS[ChainId.ARBITCHAIN_SEPOLIA],
   ])
 
   return useMemo(() => {
@@ -215,8 +215,8 @@ export function useTVL(): TVLInfo[] {
   const arbPrice = priceData?.['arb']
   const ribPrice = priceData?.['rib']
 
-  const farmingPools = Object.keys(POOLS[ChainId.ARBITRUM_SEPOLIA]).map((key) => {
-    return { ...POOLS[ChainId.ARBITRUM_SEPOLIA][key], lpToken: key }
+  const farmingPools = Object.keys(POOLS[ChainId.ARBITCHAIN_SEPOLIA]).map((key) => {
+    return { ...POOLS[ChainId.ARBITCHAIN_SEPOLIA][key], lpToken: key }
   })
 
   const singlePools = farmingPools.filter((r) => !r.token1)
@@ -227,10 +227,10 @@ export function useTVL(): TVLInfo[] {
   const results = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'getReserves')
   const totalSupply = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'totalSupply')
   const distributorBalance = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'balanceOf', [
-    ASWAP_DISTRIBUTOR_ADDRESS[ChainId.ARBITRUM_SEPOLIA],
+    ASWAP_DISTRIBUTOR_ADDRESS[ChainId.ARBITCHAIN_SEPOLIA],
   ])
   const distributorBalanceSingle = useMultipleContractSingleData(singleAddresses, PAIR_INTERFACE, 'balanceOf', [
-    ASWAP_DISTRIBUTOR_ADDRESS[ChainId.ARBITRUM_SEPOLIA],
+    ASWAP_DISTRIBUTOR_ADDRESS[ChainId.ARBITCHAIN_SEPOLIA],
   ])
 
   return useMemo(() => {

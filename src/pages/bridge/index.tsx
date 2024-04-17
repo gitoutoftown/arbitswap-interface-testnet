@@ -6,7 +6,7 @@ import {
   CurrencyAmount,
   Ether,
   JSBI,
-  Arbitrum_Sepolia,
+  Arbitchain_Sepolia,
   NATIVE,
   Token,
   WNATIVE,
@@ -117,7 +117,7 @@ export default function Bridge() {
   const [chainFrom, setChainFrom] = useState<Chain | null>(currentChainFrom || DEFAULT_CHAIN_FROM)
 
   const [chainTo, setChainTo] = useState<Chain | null>(
-    chainId == ChainId.ARBITRUM_SEPOLIA ? DEFAULT_CHAIN_FROM : DEFAULT_CHAIN_TO
+    chainId == ChainId.ARBITCHAIN_SEPOLIA ? DEFAULT_CHAIN_FROM : DEFAULT_CHAIN_TO
   )
 
   const [tokenList, setTokenList] = useState<Currency[] | null>([])
@@ -126,7 +126,7 @@ export default function Bridge() {
   const [tokenToBridge, setTokenToBridge] = useState<AvailableChainsInfo | null>(null)
   const currencyContract = useTokenContract(currency0?.isToken && currency0?.address, true)
   const anyswapCurrencyContract = useAnyswapTokenContract(
-    currency0 && currency0.chainId == ChainId.ARBITRUM_SEPOLIA && tokenToBridge.other.ContractAddress,
+    currency0 && currency0.chainId == ChainId.ARBITCHAIN_SEPOLIA && tokenToBridge.other.ContractAddress,
     true
   )
   const [pendingTx, setPendingTx] = useState(false)
@@ -225,8 +225,8 @@ export default function Bridge() {
       .map((r) => {
         const info: AvailableChainsInfo = anyswapInfo[chainFrom.id][r]
         if (r.toLowerCase() == WNATIVE[chainFrom.id].address.toLowerCase()) {
-          if (chainFrom.id == ChainId.ARBITRUM_SEPOLIA) {
-            return Arbitrum_Sepolia.onChain(chainFrom.id)
+          if (chainFrom.id == ChainId.ARBITCHAIN_SEPOLIA) {
+            return Arbitchain_Sepolia.onChain(chainFrom.id)
           }
           if (chainFrom.id == ChainId.BSC) {
             return Binance.onChain(chainFrom.id)
@@ -249,7 +249,7 @@ export default function Bridge() {
       if (chainTo.id == chain.id) {
         changeTo = chainFrom
       }
-      if (changeTo.id !== ChainId.ARBITRUM_SEPOLIA && chain.id !== ChainId.ARBITRUM_SEPOLIA) {
+      if (changeTo.id !== ChainId.ARBITCHAIN_SEPOLIA && chain.id !== ChainId.ARBITCHAIN_SEPOLIA) {
         setChainTo(DEFAULT_CHAIN_TO)
       } else {
         setChainTo(changeTo)
@@ -265,7 +265,7 @@ export default function Bridge() {
       if (chainFrom.id == chain.id) {
         changeFrom = chainTo
       }
-      if (changeFrom.id !== ChainId.ARBITRUM_SEPOLIA && chain.id !== ChainId.ARBITRUM_SEPOLIA) {
+      if (changeFrom.id !== ChainId.ARBITCHAIN_SEPOLIA && chain.id !== ChainId.ARBITCHAIN_SEPOLIA) {
         setChainFrom(DEFAULT_CHAIN_TO)
       } else {
         setChainFrom(changeFrom)
@@ -370,13 +370,13 @@ export default function Bridge() {
 
   const bridgeToken = async () => {
     const token = tokenToBridge.other
-    const depositAddress = currency0.chainId == ChainId.ARBITRUM_SEPOLIA ? token.ContractAddress : token.DepositAddress
+    const depositAddress = currency0.chainId == ChainId.ARBITCHAIN_SEPOLIA ? token.ContractAddress : token.DepositAddress
 
     const amountToBridge = ethers.utils.parseUnits(currencyAmount, token.Decimals)
     setPendingTx(true)
 
     try {
-      if (currency0.chainId == ChainId.ARBITRUM_SEPOLIA) {
+      if (currency0.chainId == ChainId.ARBITCHAIN_SEPOLIA) {
         if (currency0.isNative) {
         } else if (currency0.isToken) {
           const fn = anyswapCurrencyContract?.interface?.getFunction('Swapout')
@@ -433,7 +433,7 @@ export default function Bridge() {
     }
   }
 
-  const anyswapChains = [ChainId.ARBITRUM_SEPOLIA, ChainId.BSC, ChainId.MAINNET]
+  const anyswapChains = [ChainId.ARBITCHAIN_SEPOLIA, ChainId.BSC, ChainId.MAINNET]
   const availableChains = Object.keys(anyswapInfo || {})
     .map((r) => parseInt(r))
     .filter((r) => anyswapChains.includes(r))
@@ -523,7 +523,7 @@ export default function Bridge() {
             <div className="p-4 text-center">
               <div className="justify-between space-x-3 items-center">
                 <Typography component="h3" variant="base">
-                  {i18n._(t`Bridge tokens to and from the Arbitrum_Sepolia Network`)}
+                  {i18n._(t`Bridge tokens to and from the Arbitchain_Sepolia Network`)}
                 </Typography>
               </div>
             </div>

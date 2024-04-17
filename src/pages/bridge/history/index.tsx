@@ -97,7 +97,7 @@ const Transaction: FC<{ chainId: string; hash: string }> = ({ chainId, hash }) =
   const addedTime = moment.unix(tzTime).fromNow()
 
   const getUrl = () => {
-    if (srcChaindId == ChainId.ARBITRUM_SEPOLIA) {
+    if (srcChaindId == ChainId.ARBITCHAIN_SEPOLIA) {
       return `https://bridgeapi.anyswap.exchange/v2/getWithdrawHashStatus/${from}/${hash}/${srcChaindId}/${pairId}/${destChainId}`
     } else {
       return `https://bridgeapi.anyswap.exchange/v2/getHashStatus/${from}/${hash}/${destChainId}/${pairId}/${srcChaindId}`

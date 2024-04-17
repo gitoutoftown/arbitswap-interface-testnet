@@ -1,5 +1,5 @@
 # Arbitswap.org
-Arbitswap DEX on Arbitrum_Sepolia
+Arbitswap DEX on Arbitchain_Sepolia
 
 ### Whitelisting
 

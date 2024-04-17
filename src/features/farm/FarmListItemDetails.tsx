@@ -138,7 +138,7 @@ const FarmListItem = ({ farm }) => {
                 onClick={async () => {
                   setPendingTx(true)
                   try {
-                    // KMP decimals depend on asset, SLP is always 18
+                    // KMP decimals depend on asset, ALP is always 18
                     const tx = await deposit(farm?.id, depositValue.toBigNumber(liquidityToken?.decimals))
 
                     addTransaction(tx, {
@@ -201,7 +201,7 @@ const FarmListItem = ({ farm }) => {
               onClick={async () => {
                 setPendingTx(true)
                 try {
-                  // KMP decimals depend on asset, SLP is always 18
+                  // KMP decimals depend on asset, ALP is always 18
                   const tx = await withdraw(farm?.id, withdrawValue.toBigNumber(liquidityToken?.decimals))
                   addTransaction(tx, {
                     summary: `${i18n._(t`Withdraw`)} ${

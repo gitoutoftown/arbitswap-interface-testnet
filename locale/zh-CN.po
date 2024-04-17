@@ -93,11 +93,11 @@ msgstr "30天"
 #~ msgstr "Polygon上的300M+ TVL!启用优化的路由"
 
 #: src/pages/Yield/minichefv2/InputGroup.tsx:69
-#~ msgid "<0>Tip:</0> In order to start earning rewards, you will need to first acquire some SLP by adding liquidity to the specified pair or <1>migrating existing liquidity.</1> Once you have SLP you can stake it into this yield farm to start earning rewards. Unstake anytime and then you can convert your SLP back to base tokens by clicking Remove Liquidity. Click Harvest to receive you rewards at any time."
-#~ msgstr "<0>提示： </0>为了开始获得奖励，您需要首先通过向指定代币对添加流动性或<1>迁移现有流动性来获取一些SLP。 </1>拥有SLP后，您可以将其抵押到此挖矿页面中开始挖矿。随时可以借出质押停止挖矿，通过单击“移除流动性”将SLP转换回基本代币。单击“收获”可随时获得奖励。"
+#~ msgid "<0>Tip:</0> In order to start earning rewards, you will need to first acquire some ALP by adding liquidity to the specified pair or <1>migrating existing liquidity.</1> Once you have ALP you can stake it into this yield farm to start earning rewards. Unstake anytime and then you can convert your ALP back to base tokens by clicking Remove Liquidity. Click Harvest to receive you rewards at any time."
+#~ msgstr "<0>提示： </0>为了开始获得奖励，您需要首先通过向指定代币对添加流动性或<1>迁移现有流动性来获取一些ALP。 </1>拥有ALP后，您可以将其抵押到此挖矿页面中开始挖矿。随时可以借出质押停止挖矿，通过单击“移除流动性”将ALP转换回基本代币。单击“收获”可随时获得奖励。"
 
-#~ msgid "<0>Tip:</0> In order to start earning rewards, you will need to first acquire some SLP by adding liquidity to the specified pair or <1>migrating existing liquidity.</1> Once you have SLP you can stake it into this yield farm to start earning rewards. Unstake anytime and then you can convert your SLP back to base tokens by clicking Remove Liquidity. Click Harvest to receive your rewards at any time."
-#~ msgstr "<0>提示： </0>为了开始获得奖励，您需要首先通过向指定代币对添加流动性或<1>迁移现有流动性来获取一些SLP。 </1>拥有SLP后，您可以将其抵押到此挖矿页面中开始挖矿。随时可以借出质押停止挖矿，通过单击“移除流动性”将SLP转换回基本代币。单击“收获”可随时获得奖励。"
+#~ msgid "<0>Tip:</0> In order to start earning rewards, you will need to first acquire some ALP by adding liquidity to the specified pair or <1>migrating existing liquidity.</1> Once you have ALP you can stake it into this yield farm to start earning rewards. Unstake anytime and then you can convert your ALP back to base tokens by clicking Remove Liquidity. Click Harvest to receive your rewards at any time."
+#~ msgstr "<0>提示： </0>为了开始获得奖励，您需要首先通过向指定代币对添加流动性或<1>迁移现有流动性来获取一些ALP。 </1>拥有ALP后，您可以将其抵押到此挖矿页面中开始挖矿。随时可以借出质押停止挖矿，通过单击“移除流动性”将ALP转换回基本代币。单击“收获”可随时获得奖励。"
 
 #: src/pages/RemoveLiquidity/index.tsx:450
 #~ msgid "<0>Tip:</0> Removing pool tokens converts your position back into underlying tokens at the current rate, proportional to your share of the pool. Accrued fees are included in the amounts you receive."
@@ -109,7 +109,7 @@ msgstr "30天"
 
 #: src/pages/AddLiquidity/index.tsx:254
 #~ msgid "<0>Tip:</0> When you add liquidity, you will receive pool tokens representing your position. These tokens automatically earn fees proportional to your share of the pool, and can be redeemed at any time."
-#~ msgstr "<0>提示：</0>当您添加流动性的时候，您将收到代表您所提供流动性的持仓代币SLP。这些代币会自动收取手续费收入，随时可以取出。"
+#~ msgstr "<0>提示：</0>当您添加流动性的时候，您将收到代表您所提供流动性的持仓代币ALP。这些代币会自动收取手续费收入，随时可以取出。"
 
 #: src/kashi/pages/Markets/Borrow.tsx:29 src/kashi/pages/Markets/Lending.tsx:26
 #~ msgid "<0>Your</0> Positions"
@@ -397,7 +397,7 @@ msgstr "跨链桥"
 #~ msgstr ""
 
 #: src/pages/bridge/index.tsx:519
-msgid "Bridge tokens to and from the Arbitrum_Sepolia Network"
+msgid "Bridge tokens to and from the Arbitchain_Sepolia Network"
 msgstr ""
 
 #: src/pages/bridge/index.tsx:438
@@ -1347,7 +1347,7 @@ msgstr "最少可获得的数量"
 #~ msgstr "错过了拍卖？"
 
 #: src/pages/faucet/index.tsx:82
-msgid "Arbitrum_Sepolia Faucet"
+msgid "Arbitchain_Sepolia Faucet"
 msgstr ""
 
 #: src/features/farm/FarmMenu.tsx:31
@@ -1717,7 +1717,7 @@ msgstr "路由经过这些代币将给您的交易带来最好的价格。"
 #~ msgstr "SAAVE：在一次交易中叠加您的收益率"
 
 #: src/pages/kashi/borrow/[pair].tsx:244
-#~ msgid "SLP"
+#~ msgid "ALP"
 #~ msgstr ""
 
 #: src/components/YieldDetails/index.tsx:104

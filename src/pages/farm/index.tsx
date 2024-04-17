@@ -141,7 +141,7 @@ export default function Farm(): JSX.Element {
     my: (farm) => farm?.amount && !farm.amount.isZero(),
     aswap: (farm) => farm.pair.token0?.id == ASWAP_ADDRESS[chainId] || farm.pair.token1?.id == ASWAP_ADDRESS[chainId],
     single: (farm) => !farm.pair.token1,
-    arbitrum_sepolia: (farm) => farm.pair.token0?.id == WNATIVE[chainId] || farm.pair.token1?.id == WNATIVE[chainId],
+    arbitchain_sepolia: (farm) => farm.pair.token0?.id == WNATIVE[chainId] || farm.pair.token1?.id == WNATIVE[chainId],
     stables: (farm) =>
       farm.pair.token0?.symbol == 'USDC' ||
       farm.pair.token1?.symbol == 'USDC' ||

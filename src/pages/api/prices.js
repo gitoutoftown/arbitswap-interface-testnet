@@ -1,7 +1,7 @@
 const Web3 = require('web3')
 const { default: axios } = require('axios')
 import IUniswapV2PairABI from '../../constants/abis/uniswap-v2-pair.json'
-const NETWORK_URL = 'https://arbitrum_sepolia.api.onfinality.io/public'
+const NETWORK_URL = 'https://arbitchain_sepolia.api.onfinality.io/public'
 const web3 = new Web3(NETWORK_URL)
 
 export default async function handler(req, res) {

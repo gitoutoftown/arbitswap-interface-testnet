@@ -50,16 +50,16 @@ export const SUPPORTED_NETWORKS: {
     rpcUrls: ['https://bsc-dataseed.binance.org'],
     blockExplorerUrls: ['https://bscscan.com'],
   },
-  [ChainId.ARBITRUM_SEPOLIA]: {
+  [ChainId.ARBITCHAIN_SEPOLIA]: {
     chainId: '0x505',
-    chainName: 'Arbitrum_Sepolia',
+    chainName: 'Arbitchain_Sepolia',
     nativeCurrency: {
-      name: 'Arbitrum_Sepolia',
+      name: 'Arbitchain_Sepolia',
       symbol: 'ARB',
       decimals: 18,
     },
-    rpcUrls: ['https://rpc.arbitrum_sepolia.moonbeam.network', 'https://arbitrum_sepolia.api.onfinality.io/public'],
-    blockExplorerUrls: ['https://blockscout.arbitrum_sepolia.moonbeam.network/'],
+    rpcUrls: ['https://rpc.arbitchain_sepolia.moonbeam.network', 'https://arbitchain_sepolia.api.onfinality.io/public'],
+    blockExplorerUrls: ['https://blockscout.arbitchain_sepolia.moonbeam.network/'],
   },
 }
 

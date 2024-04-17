@@ -92,8 +92,8 @@ const builders = {
     }
   },
 
-  arbitrum_sepolia: (chainName: string, data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
-    const prefix = 'https://blockscout.arbitrum_sepolia.moonbeam.network/'
+  arbitchain_sepolia: (chainName: string, data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
+    const prefix = 'https://blockscout.arbitchain_sepolia.moonbeam.network/'
     switch (type) {
       case 'transaction':
         return `${prefix}/tx/${data}`
@@ -247,9 +247,9 @@ const chains: ChainObject = {
     chainName: '',
     builder: builders.moonbase,
   },
-  [ChainId.ARBITRUM_SEPOLIA]: {
+  [ChainId.ARBITCHAIN_SEPOLIA]: {
     chainName: '',
-    builder: builders.arbitrum_sepolia,
+    builder: builders.arbitchain_sepolia,
   },
   [ChainId.AVALANCHE]: {
     chainName: '',

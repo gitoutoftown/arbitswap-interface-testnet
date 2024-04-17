@@ -23,7 +23,7 @@ type AddressMap = {
 }
 
 export const VAULTS: AddressMap = {
-  [ChainId.ARBITRUM_SEPOLIA]: {
+  [ChainId.ARBITCHAIN_SEPOLIA]: {
     '0': {
       id: 0,
       lpToken: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',

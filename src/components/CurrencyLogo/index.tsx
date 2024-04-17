@@ -16,7 +16,7 @@ const BLOCKCHAIN = {
   [ChainId.HARMONY]: 'harmony',
   [ChainId.MATIC]: 'polygon',
   [ChainId.XDAI]: 'xdai',
-  [ChainId.ARBITRUM_SEPOLIA]: 'arbitrum_sepolia',
+  [ChainId.ARBITCHAIN_SEPOLIA]: 'arbitchain_sepolia',
   // [ChainId.OKEX]: 'okex',
 }
 
@@ -55,7 +55,7 @@ const MoonbeamLogo = 'https://raw.githubusercontent.com/sushiswap/icons/master/t
 const OKExLogo = 'https://raw.githubusercontent.com/sushiswap/icons/master/token/okt.jpg'
 const xDaiLogo = 'https://raw.githubusercontent.com/sushiswap/icons/master/token/dai.jpg'
 const CeloLogo = 'https://raw.githubusercontent.com/sushiswap/icons/master/token/celo.jpg'
-const Arbitrum_SepoliaLogo = 'https://arbitswap.org/images/tokens/arb.png'
+const Arbitchain_SepoliaLogo = 'http://127.0.0.1:8000/images/tokens/arb.png'
 
 const logo: { readonly [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: EthereumLogo,
@@ -78,7 +78,7 @@ const logo: { readonly [chainId in ChainId]?: string } = {
   [ChainId.ARBITRUM]: EthereumLogo,
   [ChainId.ARBITRUM_TESTNET]: EthereumLogo,
   [ChainId.CELO]: CeloLogo,
-  [ChainId.ARBITRUM_SEPOLIA]: Arbitrum_SepoliaLogo,
+  [ChainId.ARBITCHAIN_SEPOLIA]: Arbitchain_SepoliaLogo,
 }
 
 interface CurrencyLogoProps {
@@ -90,7 +90,7 @@ interface CurrencyLogoProps {
 }
 
 const unknown = 'https://raw.githubusercontent.com/sushiswap/icons/master/token/unknown.png'
-const aswap = 'https://arbitswap.org/icon.png'
+const aswap = 'http://127.0.0.1:8000/icon.png'
 
 const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({
   currency,

@@ -189,8 +189,8 @@ export const WETH9: { [chainId: number]: Token } = {
     'WETH',
     'Wrapped Ether'
   ),
-  [ChainId.ARBITRUM_SEPOLIA]: new Token(
-    ChainId.ARBITRUM_SEPOLIA,
+  [ChainId.ARBITCHAIN_SEPOLIA]: new Token(
+    ChainId.ARBITCHAIN_SEPOLIA,
     '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
     18,
     'WARB',
@@ -332,8 +332,8 @@ export const WNATIVE: { [chainId: number]: Token } = {
     'WPALM',
     'Wrapped Palm'
   ),
-  [ChainId.ARBITRUM_SEPOLIA]: new Token(
-    ChainId.ARBITRUM_SEPOLIA,
+  [ChainId.ARBITCHAIN_SEPOLIA]: new Token(
+    ChainId.ARBITCHAIN_SEPOLIA,
     '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
     18,
     'WARB',

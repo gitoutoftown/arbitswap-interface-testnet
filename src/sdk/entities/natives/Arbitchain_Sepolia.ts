@@ -4,10 +4,10 @@ import { Currency } from '../Currency'
 import { NativeCurrency } from '../NativeCurrency'
 import invariant from 'tiny-invariant'
 
-export class Arbitrum_Sepolia extends NativeCurrency {
+export class Arbitchain_Sepolia extends NativeCurrency {
   public readonly address: string
   protected constructor(chainId: number) {
-    super(chainId, 18, 'ARB', 'Arbitrum_Sepolia')
+    super(chainId, 18, 'ARB', 'Arbitchain_Sepolia')
   }
 
   public get wrapped(): Token {
@@ -16,10 +16,10 @@ export class Arbitrum_Sepolia extends NativeCurrency {
     return wnative
   }
 
-  private static _cache: { [chainId: number]: Arbitrum_Sepolia } = {}
+  private static _cache: { [chainId: number]: Arbitchain_Sepolia } = {}
 
-  public static onChain(chainId: number): Arbitrum_Sepolia {
-    return this._cache[chainId] ?? (this._cache[chainId] = new Arbitrum_Sepolia(chainId))
+  public static onChain(chainId: number): Arbitchain_Sepolia {
+    return this._cache[chainId] ?? (this._cache[chainId] = new Arbitchain_Sepolia(chainId))
   }
 
   public equals(other: Currency): boolean {

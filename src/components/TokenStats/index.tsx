@@ -9,7 +9,7 @@ import { PriceContext } from '../../contexts/priceContext'
 
 const supportedTokens = {
   ARB: {
-    name: 'Arbitrum_Sepolia',
+    name: 'Arbitchain_Sepolia',
     symbol: 'ARB',
     icon: '/images/tokens/arb.png',
   },
@@ -18,7 +18,7 @@ const supportedTokens = {
     symbol: 'ASWAP',
     icon: '/images/tokens/aswap.png',
     address: {
-      [ChainId.ARBITRUM_SEPOLIA]: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
+      [ChainId.ARBITCHAIN_SEPOLIA]: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
     },
   },
 }

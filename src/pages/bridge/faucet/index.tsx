@@ -63,7 +63,7 @@ export default function Faucet(): JSX.Element {
     <>
       <Head>
         <title>Faucet | Arbitswap</title>
-        <meta key="description" name="description" content="Arbitrum_Sepolia Faucet" />
+        <meta key="description" name="description" content="Arbitchain_Sepolia Faucet" />
       </Head>
 
       <ArbitswapLogo />
@@ -129,7 +129,7 @@ export default function Faucet(): JSX.Element {
                 </Typography>
               </div>
               <div className="flex flex-1 justify-center text-center items-center mt-8 mb-12">
-                <Image src="/images/faucet/arbitrum_sepolia-faucet.png" alt="Arbitswap" width={150} height={150} />
+                <Image src="/images/faucet/arbitchain_sepolia-faucet.png" alt="Arbitswap" width={150} height={150} />
               </div>
               <div className="p-4 mb-3 space-y-1 text-center">
                 <Typography component="h1" variant="base">

@@ -370,7 +370,7 @@ export default function Swap() {
         <meta
           key="description"
           name="description"
-          content="Arbitswap allows for swapping of compatible tokens on Arbitrum_Sepolia."
+          content="Arbitswap allows for swapping of compatible tokens on Arbitchain_Sepolia."
         />
       </Head>
 

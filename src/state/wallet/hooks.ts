@@ -155,10 +155,10 @@ export function useMultichainCurrencyBalance(
   account?: string,
   currency?: Currency
 ): CurrencyAmount<Currency> | undefined {
-  const { chainId: arbitrum_sepoliaChainId } = useActiveWeb3React()
-  const arbitrum_sepoliaBalance = useCurrencyBalance(
-    chainId == arbitrum_sepoliaChainId && account,
-    chainId == arbitrum_sepoliaChainId && currency
+  const { chainId: arbitchain_sepoliaChainId } = useActiveWeb3React()
+  const arbitchain_sepoliaBalance = useCurrencyBalance(
+    chainId == arbitchain_sepoliaChainId && account,
+    chainId == arbitchain_sepoliaChainId && currency
   )
   const [value, setValue] = useState(null)
 
@@ -185,14 +185,14 @@ export function useMultichainCurrencyBalance(
   }, [account, chainId, currency])
 
   useEffect(() => {
-    if (account && chainId && currency && chainId != arbitrum_sepoliaChainId) {
+    if (account && chainId && currency && chainId != arbitchain_sepoliaChainId) {
       getBalance()
     } else {
       setValue(null)
     }
-  }, [account, chainId, currency, getBalance, arbitrum_sepoliaChainId])
+  }, [account, chainId, currency, getBalance, arbitchain_sepoliaChainId])
 
   return useMemo(() => {
-    return chainId == arbitrum_sepoliaChainId ? arbitrum_sepoliaBalance : value
-  }, [chainId, arbitrum_sepoliaBalance, arbitrum_sepoliaChainId, value])
+    return chainId == arbitchain_sepoliaChainId ? arbitchain_sepoliaBalance : value
+  }, [chainId, arbitchain_sepoliaBalance, arbitchain_sepoliaChainId, value])
 }

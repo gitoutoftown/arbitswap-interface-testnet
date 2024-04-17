@@ -16,7 +16,7 @@
       "symbol": "ASWAP",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/icon.png"
+      "logoURI": "localhost:8000/icon.png"
     },
     {
       "name": "Wrapped ARB",
@@ -24,7 +24,7 @@
       "symbol": "WARB",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/arb.png"
+      "logoURI": "localhost:8000/images/tokens/arb.png"
     },
     {
       "name": "RiverBoat",
@@ -32,7 +32,7 @@
       "symbol": "RIB",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/rib.png"
+      "logoURI": "localhost:8000/images/tokens/rib.png"
     },
     {
       "name": "USDC Coin",
@@ -40,7 +40,7 @@
       "symbol": "USDC",
       "decimals": 6,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/usdc.png"
+      "logoURI": "localhost:8000/images/tokens/usdc.png"
     },
     {
       "name": "Dai Stablecoin",
@@ -48,7 +48,7 @@
       "symbol": "DAI",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/dai.png"
+      "logoURI": "localhost:8000/images/tokens/dai.png"
     },
     {
       "name": "Binance-Peg BUSD Token",
@@ -56,7 +56,7 @@
       "symbol": "BUSD",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/busd.png"
+      "logoURI": "localhost:8000/images/tokens/busd.png"
     },
     {
       "name": "KusaMOON",
@@ -64,7 +64,7 @@
       "symbol": "KMOON",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/kmoon.png"
+      "logoURI": "localhost:8000/images/tokens/kmoon.png"
     },
     {
       "name": "Ethereum",
@@ -72,7 +72,7 @@
       "symbol": "ETH",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/eth.png"
+      "logoURI": "localhost:8000/images/tokens/eth.png"
     },
     {
       "name": "Binance Coin",
@@ -80,7 +80,7 @@
       "symbol": "BNB",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/bnb.png"
+      "logoURI": "localhost:8000/images/tokens/bnb.png"
     },
     {
       "name": "MoonBeans",
@@ -88,7 +88,7 @@
       "symbol": "BEANS",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/beans.png"
+      "logoURI": "localhost:8000/images/tokens/beans.png"
     },
     {
       "name": "Laika Protocol",
@@ -96,7 +96,7 @@
       "symbol": "LAIKA",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/laika.png"
+      "logoURI": "localhost:8000/images/tokens/laika.png"
     },
     {
       "name": "Wrapped BTC",
@@ -104,7 +104,7 @@
       "symbol": "WBTC",
       "decimals": 8,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/wbtc.png"
+      "logoURI": "localhost:8000/images/tokens/wbtc.png"
     },
     {
       "name": "Tether USD",
@@ -112,7 +112,7 @@
       "symbol": "USDT",
       "decimals": 6,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/usdt.png"
+      "logoURI": "localhost:8000/images/tokens/usdt.png"
     },
     {
       "name": "MoonKafe",
@@ -120,7 +120,7 @@
       "symbol": "KAFE",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/kafe.png"
+      "logoURI": "localhost:8000/images/tokens/kafe.png"
     },
     {
       "name": "Relay Token",
@@ -128,7 +128,7 @@
       "symbol": "RELAY",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/relay.png"
+      "logoURI": "localhost:8000/images/tokens/relay.png"
     },
     {
       "name": "Avalanche",
@@ -136,7 +136,7 @@
       "symbol": "AVAX",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/avax.png"
+      "logoURI": "localhost:8000/images/tokens/avax.png"
     },
     {
       "name": "Matic",
@@ -144,7 +144,7 @@
       "symbol": "MATIC",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/matic.png"
+      "logoURI": "localhost:8000/images/tokens/matic.png"
     },
     {
       "name": "1SWAP",
@@ -152,7 +152,7 @@
       "symbol": "1SWAP",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/1swap.png"
+      "logoURI": "localhost:8000/images/tokens/1swap.png"
     },
     {
       "name": "miMatic",
@@ -160,7 +160,7 @@
       "symbol": "MAI",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/mimatic.png"
+      "logoURI": "localhost:8000/images/tokens/mimatic.png"
     },
     {
       "name": "Fantom Token",
@@ -168,7 +168,7 @@
       "symbol": "FTM",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/ftm.png"
+      "logoURI": "localhost:8000/images/tokens/ftm.png"
     },
     {
       "name": "Magic Internet Money",
@@ -176,15 +176,15 @@
       "symbol": "MIM",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/mim.png"
+      "logoURI": "localhost:8000/images/tokens/mim.png"
     },
     {
-      "name": "DOT@arbitrum_sepolia",
+      "name": "DOT@arbitchain_sepolia",
       "address": "0x15B9CA9659F5dfF2b7d35a98dd0790a3CBb3D445",
       "symbol": "DOT.m",
       "decimals": 10,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/dot-m.png"
+      "logoURI": "localhost:8000/images/tokens/dot-m.png"
     },
     {
       "name": "PolkaPet World",
@@ -192,7 +192,7 @@
       "symbol": "PETS",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/ppw.png"
+      "logoURI": "localhost:8000/images/tokens/ppw.png"
     },
     {
       "name": "Neku Finance",
@@ -200,7 +200,7 @@
       "symbol": "NEKU",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/neku.png"
+      "logoURI": "localhost:8000/images/tokens/neku.png"
     },
     {
       "name": "Million",
@@ -208,7 +208,7 @@
       "symbol": "MM",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/mm-square.png"
+      "logoURI": "localhost:8000/images/tokens/mm-square.png"
     },
     {
       "name": "RivrDoge",
@@ -216,7 +216,7 @@
       "symbol": "RivrDoge",
       "decimals": 18,
       "chainId": 421990,
-      "logoURI": "https://app.arbitswap.org/images/tokens/rivrdoge.png"
+      "logoURI": "localhost:8000/images/tokens/rivrdoge.png"
     }
   ]
 }

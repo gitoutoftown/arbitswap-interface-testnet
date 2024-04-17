@@ -4,7 +4,7 @@ import pairAbi from '../../constants/abis/uniswap-v2-pair.json'
 import { POOLS } from '../../constants/farms'
 import { ChainId } from '../../sdk'
 
-const NETWORK_URL = 'https://arbitrum_sepolia-api.bwarelabs.com/0e63ad82-4f98-46f9-8496-f75657e3a8e4'
+const NETWORK_URL = 'https://arbitchain_sepolia-api.bwarelabs.com/0e63ad82-4f98-46f9-8496-f75657e3a8e4'
 const web3 = new Web3(NETWORK_URL)
 
 export default async function handler(req, res) {
@@ -39,7 +39,7 @@ export async function farms() {
     })
 
     const ret = []
-    const poolStaticInfo = POOLS[ChainId.ARBITRUM_SEPOLIA]
+    const poolStaticInfo = POOLS[ChainId.ARBITCHAIN_SEPOLIA]
 
     for (const pool of poolsInfo) {
       const staticInfo = poolStaticInfo[web3.utils.toChecksumAddress(pool.lpToken)]
