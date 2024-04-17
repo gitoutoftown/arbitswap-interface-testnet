@@ -50,11 +50,11 @@ export const OKEX: { [key: string]: Token } = {
   WETH: new Token(ChainId.OKEX, '0xEF71CA2EE68F45B9Ad6F72fbdb33d707b872315C', 18, 'WETH', 'Wrapped Ether'),
 }
 
-export const MOONRIVER: { [key: string]: Token } = {
-  DAI: new Token(ChainId.MOONRIVER, '0x80A16016cC4A2E6a2CACA8a4a498b1699fF0f844', 18, 'DAI', 'Dai Stablecoin'),
-  USDC: new Token(ChainId.MOONRIVER, '0xE3F5a90F9cb311505cd691a46596599aA1A0AD7D', 6, 'USDC', 'USD Coin'),
-  SOLAR: new Token(ChainId.MOONRIVER, '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B', 18, 'SOLAR', 'Solarbeam Token'),
-  BUSD: new Token(ChainId.MOONRIVER, '0x5D9ab5522c64E1F6ef5e3627ECCc093f56167818', 18, 'BUSD', 'Binance-Peg BUSD Token'),
+export const ARBITRUM_SEPOLIA: { [key: string]: Token } = {
+  DAI: new Token(ChainId.ARBITRUM_SEPOLIA, '0x80A16016cC4A2E6a2CACA8a4a498b1699fF0f844', 18, 'DAI', 'Dai Stablecoin'),
+  USDC: new Token(ChainId.ARBITRUM_SEPOLIA, '0xE3F5a90F9cb311505cd691a46596599aA1A0AD7D', 6, 'USDC', 'USD Coin'),
+  ASWAP: new Token(ChainId.ARBITRUM_SEPOLIA, '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B', 18, 'ASWAP', 'Arbitswap Token'),
+  BUSD: new Token(ChainId.ARBITRUM_SEPOLIA, '0x5D9ab5522c64E1F6ef5e3627ECCc093f56167818', 18, 'BUSD', 'Binance-Peg BUSD Token'),
 }
 
 export const HECO: { [key: string]: Token } = {
@@ -192,7 +192,7 @@ type ChainTokenMap = {
   readonly [chainId in ChainId]?: Token
 }
 
-export const SOLAR_ADDRESS = {
+export const ASWAP_ADDRESS = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
@@ -219,21 +219,21 @@ export const SOLAR_ADDRESS = {
   [ChainId.CELO]: '',
   [ChainId.PALM]: '',
   [ChainId.PALM_TESTNET]: '',
-  [ChainId.MOONRIVER]: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
+  [ChainId.ARBITRUM_SEPOLIA]: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
 }
 
-export const SOLAR: ChainTokenMap = {
-  [ChainId.MOONRIVER]: new Token(ChainId.MOONRIVER, SOLAR_ADDRESS[ChainId.MOONRIVER], 18, 'SOLAR', 'Solarbeam Token'),
+export const ASWAP: ChainTokenMap = {
+  [ChainId.ARBITRUM_SEPOLIA]: new Token(ChainId.ARBITRUM_SEPOLIA, ASWAP_ADDRESS[ChainId.ARBITRUM_SEPOLIA], 18, 'ASWAP', 'Arbitswap Token'),
 }
 
 export const WETH9_EXTENDED: { [chainId: number]: Token } = {
   ...WETH9,
-  [SupportedChainId.MOONRIVER]: new Token(
-    ChainId.MOONRIVER,
+  [SupportedChainId.ARBITRUM_SEPOLIA]: new Token(
+    ChainId.ARBITRUM_SEPOLIA,
     '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
     18,
-    'MOVR',
-    'Moonriver'
+    'ARB',
+    'Arbitrum_Sepolia'
   ),
 }
 

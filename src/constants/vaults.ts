@@ -23,14 +23,14 @@ type AddressMap = {
 }
 
 export const VAULTS: AddressMap = {
-  [ChainId.MOONRIVER]: {
+  [ChainId.ARBITRUM_SEPOLIA]: {
     '0': {
       id: 0,
       lpToken: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
       token0: {
         id: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
-        name: 'Solarbeam',
-        symbol: 'SOLAR',
+        name: 'Arbitswap',
+        symbol: 'ASWAP',
         decimals: 18,
       },
     },
@@ -39,8 +39,8 @@ export const VAULTS: AddressMap = {
       lpToken: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
       token0: {
         id: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
-        name: 'Solarbeam',
-        symbol: 'SOLAR',
+        name: 'Arbitswap',
+        symbol: 'ASWAP',
         decimals: 18,
       },
     },
@@ -49,8 +49,8 @@ export const VAULTS: AddressMap = {
       lpToken: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
       token0: {
         id: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
-        name: 'Solarbeam',
-        symbol: 'SOLAR',
+        name: 'Arbitswap',
+        symbol: 'ASWAP',
         decimals: 18,
       },
     }

@@ -1,6 +1,6 @@
-# Solarbeam.io
-Solarbeam DEX on Moonriver
+# Arbitswap.org
+Arbitswap DEX on Arbitrum_Sepolia
 
 ### Whitelisting
 
-Whitelisting requests are submited under [solarbeam-tokenlist](https://github.com/solarbeamio/solarbeam-tokenlist) repository.
+Whitelisting requests are submited under [arbitswap-tokenlist](https://github.com/arbitswaporg/arbitswap-tokenlist) repository.

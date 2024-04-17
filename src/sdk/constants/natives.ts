@@ -10,7 +10,7 @@ import {
   Okex,
   Palm,
   xDai,
-  Moonriver
+  Arbitrum_Sepolia
 } from '../entities/natives'
 
 import { ChainId } from '../enums'
@@ -28,7 +28,7 @@ export const NATIVE = {
   [ChainId.XDAI]: xDai.onChain(ChainId.XDAI),
   [ChainId.BSC]: Binance.onChain(ChainId.BSC),
   [ChainId.BSC_TESTNET]: Binance.onChain(ChainId.BSC_TESTNET),
-  [ChainId.MOONRIVER]:Moonriver.onChain(ChainId.MOONRIVER),
+  [ChainId.ARBITRUM_SEPOLIA]:Arbitrum_Sepolia.onChain(ChainId.ARBITRUM_SEPOLIA),
   [ChainId.AVALANCHE]: Avalanche.onChain(ChainId.AVALANCHE),
   [ChainId.AVALANCHE_TESTNET]: Avalanche.onChain(ChainId.AVALANCHE_TESTNET),
   [ChainId.HECO]: Heco.onChain(ChainId.HECO),

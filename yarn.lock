@@ -5849,7 +5849,7 @@ date-fns@^2.16.1, date-fns@^2.17.0:
 
 debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d42199015df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
   dependencies:
     ms "2.0.0"
@@ -8310,7 +8310,7 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0,
 
 "graph-results-pager@https://github.com/LufyCZ/graph-results-pager":
   version "1.0.3"
-  resolved "https://github.com/LufyCZ/graph-results-pager#9b230f05b8d79aeedc9e167ac5a1fea33e04d51f"
+  resolved "https://github.com/LufyCZ/graph-results-pager#31dd744aa9c1e1ad4e8138f63450781768ed542d"
   dependencies:
     node-fetch "2.6.1"
 

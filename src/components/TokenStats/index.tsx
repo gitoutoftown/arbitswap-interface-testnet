@@ -8,17 +8,17 @@ import { ChainId } from '../../sdk'
 import { PriceContext } from '../../contexts/priceContext'
 
 const supportedTokens = {
-  MOVR: {
-    name: 'Moonriver',
-    symbol: 'MOVR',
-    icon: '/images/tokens/movr.png',
+  ARB: {
+    name: 'Arbitrum_Sepolia',
+    symbol: 'ARB',
+    icon: '/images/tokens/arb.png',
   },
-  SOLAR: {
-    name: 'Solarbeam Token',
-    symbol: 'SOLAR',
-    icon: '/images/tokens/solar.png',
+  ASWAP: {
+    name: 'Arbitswap Token',
+    symbol: 'ASWAP',
+    icon: '/images/tokens/aswap.png',
     address: {
-      [ChainId.MOONRIVER]: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
+      [ChainId.ARBITRUM_SEPOLIA]: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
     },
   },
 }

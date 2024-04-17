@@ -1,8 +1,8 @@
 {
-  "name": "Solarbeam",
-  "short_name": "Solarbeam",
+  "name": "Arbitswap",
+  "short_name": "Arbitswap",
   "lang": "en",
-  "description": "Solarbeam - AMM on Moonriver.",
+  "description": "Arbitswap - AMM on Arbitrum_Sepolia.",
   "background_color": "#111",
   "theme_color": "#111",
   "dir": "ltr",

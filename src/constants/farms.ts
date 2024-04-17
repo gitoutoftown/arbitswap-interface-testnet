@@ -22,30 +22,30 @@ type AddressMap = {
 }
 
 export const POOLS: AddressMap = {
-  [ChainId.MOONRIVER]: {
+  [ChainId.ARBITRUM_SEPOLIA]: {
     '0x7eDA899b3522683636746a2f3a7814e6fFca75e1': {
       id: 0,
       token0: {
         id: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
-        name: 'Solarbeam',
-        symbol: 'SOLAR',
+        name: 'Arbitswap',
+        symbol: 'ASWAP',
         decimals: 18,
       },
       token1: {
         id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
-        name: 'Moonriver',
-        symbol: 'MOVR',
+        name: 'Arbitrum_Sepolia',
+        symbol: 'ARB',
         decimals: 18,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B': {
       id: 1,
       token0: {
         id: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
-        name: 'Solarbeam',
-        symbol: 'SOLAR',
+        name: 'Arbitswap',
+        symbol: 'ASWAP',
         decimals: 18,
       },
     },
@@ -53,8 +53,8 @@ export const POOLS: AddressMap = {
       id: 2,
       token0: {
         id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
-        name: 'Wrapped Moonriver',
-        symbol: 'WMOVR',
+        name: 'Wrapped Arbitrum_Sepolia',
+        symbol: 'WARB',
         decimals: 18,
       },
     },
@@ -62,8 +62,8 @@ export const POOLS: AddressMap = {
       id: 3,
       token0: {
         id: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
-        name: 'Solarbeam',
-        symbol: 'SOLAR',
+        name: 'Arbitswap',
+        symbol: 'ASWAP',
         decimals: 18,
       },
       token1: {
@@ -72,7 +72,7 @@ export const POOLS: AddressMap = {
         symbol: 'RIB',
         decimals: 18,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0x0acDB54E610dAbC82b8FA454b21AD425ae460DF9': {
@@ -85,11 +85,11 @@ export const POOLS: AddressMap = {
       },
       token1: {
         id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
-        name: 'Moonriver',
-        symbol: 'MOVR',
+        name: 'Arbitrum_Sepolia',
+        symbol: 'ARB',
         decimals: 18,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0xbD90A6125a84E5C512129D622a75CDDE176aDE5E': {
@@ -111,19 +111,19 @@ export const POOLS: AddressMap = {
       },
       token1: {
         id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
-        name: 'Moonriver',
-        symbol: 'MOVR',
+        name: 'Arbitrum_Sepolia',
+        symbol: 'ARB',
         decimals: 18,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0xdb66BE1005f5Fe1d2f486E75cE3C50B52535F886': {
       id: 7,
       token0: {
         id: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
-        name: 'Solarbeam',
-        symbol: 'SOLAR',
+        name: 'Arbitswap',
+        symbol: 'ASWAP',
         decimals: 18,
       },
       token1: {
@@ -132,7 +132,7 @@ export const POOLS: AddressMap = {
         symbol: 'USDC',
         decimals: 6,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0xFE1b71BDAEE495dCA331D28F5779E87bd32FbE53': {
@@ -149,7 +149,7 @@ export const POOLS: AddressMap = {
         symbol: 'USDC',
         decimals: 6,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0x384704557F73fBFAE6e9297FD1E6075FC340dbe5': {
@@ -166,7 +166,7 @@ export const POOLS: AddressMap = {
         symbol: 'USDC',
         decimals: 6,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0xA0D8DFB2CC9dFe6905eDd5B71c56BA92AD09A3dC': {
@@ -183,7 +183,7 @@ export const POOLS: AddressMap = {
         symbol: 'USDC',
         decimals: 6,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0xfb1d0D6141Fc3305C63f189E39Cc2f2F7E58f4c2': {
@@ -200,7 +200,7 @@ export const POOLS: AddressMap = {
         symbol: 'BUSD',
         decimals: 18,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0x83d7a3fc841038E8c8F46e6192BBcCA8b19Ee4e7': {
@@ -217,7 +217,7 @@ export const POOLS: AddressMap = {
         symbol: 'USDC',
         decimals: 6,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0x2a44696DDc050f14429bd8a4A05c750C6582bF3b': {
@@ -234,7 +234,7 @@ export const POOLS: AddressMap = {
         symbol: 'USDC',
         decimals: 6,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0x29633cc367AbD9b16d327Adaf6c3538b6e97f6C0': {
@@ -247,11 +247,11 @@ export const POOLS: AddressMap = {
       },
       token1: {
         id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
-        name: 'Moonriver',
-        symbol: 'MOVR',
+        name: 'Arbitrum_Sepolia',
+        symbol: 'ARB',
         decimals: 18,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0xb9a61ac826196AbC69A3C66ad77c563D6C5bdD7b': {
@@ -264,11 +264,11 @@ export const POOLS: AddressMap = {
       },
       token1: {
         id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
-        name: 'Moonriver',
-        symbol: 'MOVR',
+        name: 'Arbitrum_Sepolia',
+        symbol: 'ARB',
         decimals: 18,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
     '0x9e0d90ebB44c22303Ee3d331c0e4a19667012433': {
@@ -281,11 +281,11 @@ export const POOLS: AddressMap = {
       },
       token1: {
         id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
-        name: 'Moonriver',
-        symbol: 'MOVR',
+        name: 'Arbitrum_Sepolia',
+        symbol: 'ARB',
         decimals: 18,
       },
-      name: 'Solarbeam LP',
+      name: 'Arbitswap LP',
       symbol: 'SLP',
     },
   },

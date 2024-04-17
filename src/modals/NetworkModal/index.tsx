@@ -138,16 +138,16 @@ export const SUPPORTED_NETWORKS: {
   //   rpcUrls: ['https://arb1.arbitrum.io/rpc'],
   //   blockExplorerUrls: ['https://mainnet-arb-explorer.netlify.app'],
   // },
-  [ChainId.MOONRIVER]: {
+  [ChainId.ARBITRUM_SEPOLIA]: {
     chainId: '0x505',
-    chainName: 'Moonriver',
+    chainName: 'Arbitrum_Sepolia',
     nativeCurrency: {
-      name: 'Moonriver',
-      symbol: 'MOVR',
+      name: 'Arbitrum_Sepolia',
+      symbol: 'ARB',
       decimals: 18,
     },
-    rpcUrls: ['https://rpc.moonriver.moonbeam.network','https://moonriver.api.onfinality.io/public'],
-    blockExplorerUrls: ['https://blockscout.moonriver.moonbeam.network/'],
+    rpcUrls: ['https://rpc.arbitrum_sepolia.moonbeam.network','https://arbitrum_sepolia.api.onfinality.io/public'],
+    blockExplorerUrls: ['https://blockscout.arbitrum_sepolia.moonbeam.network/'],
   },
 }
 
@@ -162,7 +162,7 @@ export default function NetworkModal(): JSX.Element | null {
     <Modal isOpen={networkModalOpen} onDismiss={toggleNetworkModal} maxWidth={672}>
       <ModalHeader onClose={toggleNetworkModal} title="Select a Network" />
       <div className="mb-6 text-lg text-primary">
-        You are currently browsing <span className="font-bold text-yellow">SOLAR</span>
+        You are currently browsing <span className="font-bold text-yellow">ASWAP</span>
         <br /> on the <span className="font-bold text-light-yellow">{NETWORK_LABEL[chainId]}</span> network
       </div>
 
@@ -179,7 +179,7 @@ export default function NetworkModal(): JSX.Element | null {
           // ChainId.HARMONY,
           // ChainId.AVALANCHE,
           // ChainId.CELO,
-          ChainId.MOONRIVER
+          ChainId.ARBITRUM_SEPOLIA
         ].map((key: ChainId, i: number) => {
           if (chainId === key) {
             return (

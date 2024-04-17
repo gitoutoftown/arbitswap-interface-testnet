@@ -2,10 +2,10 @@ import { ApprovalState, useApproveCallback } from '../../hooks/useApproveCallbac
 import { Token, ZERO } from '../../sdk'
 import { Disclosure, Transition } from '@headlessui/react'
 import React, { useState } from 'react'
-import { usePendingSolar, useUserInfo } from './hooks'
+import { usePendingAswap, useUserInfo } from './hooks'
 import Button from '../../components/Button'
 import Dots from '../../components/Dots'
-import { SOLAR_DISTRIBUTOR_ADDRESS, SOLAR_VAULT_ADDRESS } from '../../constants/addresses'
+import { ASWAP_DISTRIBUTOR_ADDRESS, ASWAP_VAULT_ADDRESS } from '../../constants/addresses'
 import { Input as NumericalInput } from '../../components/NumericalInput'
 import { formatNumber, formatNumberScale, formatPercent } from '../../functions'
 import { getAddress } from '@ethersproject/address'
@@ -49,12 +49,12 @@ const VaultListItem = ({ farm }) => {
   // TODO: Replace these
   const { amount, nextHarvestUntil, userLockedUntil } = useUserInfo(farm, liquidityToken)
 
-  const pendingSolar = usePendingSolar(farm)
+  const pendingAswap = usePendingAswap(farm)
 
   const typedDepositValue = tryParseAmount(depositValue, liquidityToken)
   const typedWithdrawValue = tryParseAmount(withdrawValue, liquidityToken)
 
-  const [approvalState, approve] = useApproveCallback(typedDepositValue, SOLAR_VAULT_ADDRESS[chainId])
+  const [approvalState, approve] = useApproveCallback(typedDepositValue, ASWAP_VAULT_ADDRESS[chainId])
 
   const { deposit, withdraw, harvest } = useMasterChef()
 
@@ -69,7 +69,7 @@ const VaultListItem = ({ farm }) => {
           <Typography variant="lg" className="font-medium pt-4">
             {i18n._(
               t`${
-                currentAction.action == 'deposit' ? 'Staking on Solar Vault' : 'Harvesting'
+                currentAction.action == 'deposit' ? 'Staking on Aswap Vault' : 'Harvesting'
               } will lock your tokens for ${currentAction.lockup}.`
             )}
           </Typography>
@@ -278,7 +278,7 @@ const VaultListItem = ({ farm }) => {
               </Button>
             </div>
           </div>
-          {pendingSolar && pendingSolar.greaterThan(ZERO) && (
+          {pendingAswap && pendingAswap.greaterThan(ZERO) && (
             <div className="px-4 pb-4">
               <Button
                 color="gradient"
@@ -315,7 +315,7 @@ const VaultListItem = ({ farm }) => {
                   }
                 }}
               >
-                {i18n._(t`Harvest ${formatNumber(pendingSolar.toFixed(18))} SOLAR`)}
+                {i18n._(t`Harvest ${formatNumber(pendingAswap.toFixed(18))} ASWAP`)}
               </Button>
             </div>
           )}

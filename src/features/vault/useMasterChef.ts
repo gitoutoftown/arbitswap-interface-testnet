@@ -1,4 +1,4 @@
-import { useActiveWeb3React, useSolarDistributorContract, useSolarVaultContract } from '../../hooks'
+import { useActiveWeb3React, useAswapDistributorContract, useAswapVaultContract } from '../../hooks'
 
 import { BigNumber } from '@ethersproject/bignumber'
 import { Zero } from '@ethersproject/constants'
@@ -6,7 +6,7 @@ import { useCallback } from 'react'
 
 export default function useMasterChef() {
 
-  const contract = useSolarVaultContract()
+  const contract = useAswapVaultContract()
 
   // Deposit
   const deposit = useCallback(

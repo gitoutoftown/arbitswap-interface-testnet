@@ -33,11 +33,11 @@ export const RPC = {
   [ChainId.OKEX]: 'https://exchainrpc.okex.org',
   [ChainId.OKEX_TESTNET]: 'https://exchaintestrpc.okex.org',
   [ChainId.ARBITRUM]: 'https://arb1.arbitrum.io/rpc',
-  [ChainId.MOONRIVER]: 'https://moonriver-api.bwarelabs.com/0e63ad82-4f98-46f9-8496-f75657e3a8e4', //'https://moonriver.api.onfinality.io/public',
+  [ChainId.ARBITRUM_SEPOLIA]: 'https://arbitrum_sepolia-api.bwarelabs.com/0e63ad82-4f98-46f9-8496-f75657e3a8e4', //'https://arbitrum_sepolia.api.onfinality.io/public',
 }
 
 export const network = new NetworkConnector({
-  defaultChainId: 1285,
+  defaultChainId: 421990,
   urls: RPC,
 })
 
@@ -62,7 +62,7 @@ export const injected = new InjectedConnector({
     // 56, // binance smart chain
     // 97, // binance smart chain testnet
     // 1287, // moonbase
-    1285, // moonriver
+    421990, // arbitrum_sepolia
     // 43114, // avalanche
     // 43113, // fuji
     // 128, // heco
@@ -92,7 +92,7 @@ export const bridgeInjected = new InjectedConnector({
     56, // binance smart chain
     // 97, // binance smart chain testnet
     // 1287, // moonbase
-    1285, // moonriver
+    421990, // arbitrum_sepolia
     // 43114, // avalanche
     // 43113, // fuji
     // 128, // heco
@@ -109,7 +109,7 @@ export const bridgeInjected = new InjectedConnector({
 
 // mainnet only
 export const walletconnect = new WalletConnectConnector({
-  rpc: { [ChainId.MOONRIVER]: RPC[ChainId.MOONRIVER] },
+  rpc: { [ChainId.ARBITRUM_SEPOLIA]: RPC[ChainId.ARBITRUM_SEPOLIA] },
   bridge: 'https://bridge.walletconnect.org',
   qrcode: true,
   pollingInterval: 15000,

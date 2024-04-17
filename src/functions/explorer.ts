@@ -92,8 +92,8 @@ const builders = {
     }
   },
 
-  moonriver: (chainName: string, data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
-    const prefix = 'https://blockscout.moonriver.moonbeam.network/'
+  arbitrum_sepolia: (chainName: string, data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
+    const prefix = 'https://blockscout.arbitrum_sepolia.moonbeam.network/'
     switch (type) {
       case 'transaction':
         return `${prefix}/tx/${data}`
@@ -247,9 +247,9 @@ const chains: ChainObject = {
     chainName: '',
     builder: builders.moonbase,
   },
-  [ChainId.MOONRIVER]: {
+  [ChainId.ARBITRUM_SEPOLIA]: {
     chainName: '',
-    builder: builders.moonriver,
+    builder: builders.arbitrum_sepolia,
   },
   [ChainId.AVALANCHE]: {
     chainName: '',

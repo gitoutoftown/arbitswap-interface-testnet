@@ -50,16 +50,16 @@ export const SUPPORTED_NETWORKS: {
     rpcUrls: ['https://bsc-dataseed.binance.org'],
     blockExplorerUrls: ['https://bscscan.com'],
   },
-  [ChainId.MOONRIVER]: {
+  [ChainId.ARBITRUM_SEPOLIA]: {
     chainId: '0x505',
-    chainName: 'Moonriver',
+    chainName: 'Arbitrum_Sepolia',
     nativeCurrency: {
-      name: 'Moonriver',
-      symbol: 'MOVR',
+      name: 'Arbitrum_Sepolia',
+      symbol: 'ARB',
       decimals: 18,
     },
-    rpcUrls: ['https://rpc.moonriver.moonbeam.network', 'https://moonriver.api.onfinality.io/public'],
-    blockExplorerUrls: ['https://blockscout.moonriver.moonbeam.network/'],
+    rpcUrls: ['https://rpc.arbitrum_sepolia.moonbeam.network', 'https://arbitrum_sepolia.api.onfinality.io/public'],
+    blockExplorerUrls: ['https://blockscout.arbitrum_sepolia.moonbeam.network/'],
   },
 }
 

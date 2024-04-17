@@ -7,7 +7,7 @@ import Image from '../../components/Image'
 import React, { useContext, useState } from 'react'
 import { useCurrency } from '../../hooks/Tokens'
 import { useV2PairsWithPrice } from '../../hooks/useV2Pairs'
-import { SOLAR_ADDRESS } from '../../constants/tokens'
+import { ASWAP_ADDRESS } from '../../constants/tokens'
 import { useActiveWeb3React } from '../../hooks'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
@@ -28,8 +28,8 @@ const VaultListItem = ({ farm, ...rest }) => {
 
   const priceData = useContext(PriceContext)
 
-  const solarPrice = priceData?.['solar']
-  const movrPrice = priceData?.['movr']
+  const aswapPrice = priceData?.['aswap']
+  const arbPrice = priceData?.['arb']
   const ribPrice = priceData?.['rib']
 
   const [selectedFarm, setSelectedFarm] = useState<string>(null)
@@ -40,11 +40,11 @@ const VaultListItem = ({ farm, ...rest }) => {
   function getTvl() {
     let lpPrice = 0
     let decimals = 18
-    if (farm.lpToken.toLowerCase() == SOLAR_ADDRESS[chainId].toLowerCase()) {
-      lpPrice = solarPrice
+    if (farm.lpToken.toLowerCase() == ASWAP_ADDRESS[chainId].toLowerCase()) {
+      lpPrice = aswapPrice
       decimals = farm.pair.token0?.decimals
     } else if (farm.lpToken.toLowerCase() == WNATIVE[chainId].toLowerCase()) {
-      lpPrice = movrPrice
+      lpPrice = arbPrice
     } else if (farm.lpToken.toLowerCase() == '0xbD90A6125a84E5C512129D622a75CDDE176aDE5E'.toLowerCase()) {
       lpPrice = ribPrice
     } else {
@@ -52,7 +52,7 @@ const VaultListItem = ({ farm, ...rest }) => {
     }
 
     farm.lpPrice = lpPrice
-    farm.solarPrice = solarPrice
+    farm.aswapPrice = aswapPrice
 
     return Number(farm.totalLp / 10 ** decimals) * lpPrice
   }
@@ -107,7 +107,7 @@ const VaultListItem = ({ farm, ...rest }) => {
                     {farm?.rewards?.map((reward, i) => (
                       <div key={i} className="flex items-center">
                         <Image
-                          src={`http://solarbeam.io/images/tokens/solar.png`}
+                          src={`http://arbitswap.org/images/tokens/aswap.png`}
                           width="50px"
                           height="50px"
                           className="rounded-md"
@@ -157,7 +157,7 @@ const VaultListItem = ({ farm, ...rest }) => {
           token0={token0}
           token1={token1}
           lpPrice={farm.lpPrice}
-          solarPrice={solarPrice}
+          aswapPrice={aswapPrice}
         />
       )}
     </React.Fragment>

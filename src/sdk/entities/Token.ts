@@ -189,12 +189,12 @@ export const WETH9: { [chainId: number]: Token } = {
     'WETH',
     'Wrapped Ether'
   ),
-  [ChainId.MOONRIVER]: new Token(
-    ChainId.MOONRIVER,
+  [ChainId.ARBITRUM_SEPOLIA]: new Token(
+    ChainId.ARBITRUM_SEPOLIA,
     '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
     18,
-    'WMOVR',
-    'Wrapped MOVR'
+    'WARB',
+    'Wrapped ARB'
   ),
 }
 
@@ -332,11 +332,11 @@ export const WNATIVE: { [chainId: number]: Token } = {
     'WPALM',
     'Wrapped Palm'
   ),
-  [ChainId.MOONRIVER]: new Token(
-    ChainId.MOONRIVER,
+  [ChainId.ARBITRUM_SEPOLIA]: new Token(
+    ChainId.ARBITRUM_SEPOLIA,
     '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
     18,
-    'WMOVR',
-    'Wrapped MOVR'
+    'WARB',
+    'Wrapped ARB'
   ),
 }

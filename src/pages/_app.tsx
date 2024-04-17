@@ -104,14 +104,14 @@ function MyApp({
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
-        <title key="title">Solarbeam</title>
+        <title key="title">Arbitswap</title>
 
-        <meta key="description" name="description" content="Solarbeam - AMM on Moonriver." />
+        <meta key="description" name="description" content="Arbitswap - AMM on Arbitrum_Sepolia." />
 
-        <meta name="application-name" content="Solarbeam App" />
+        <meta name="application-name" content="Arbitswap App" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="Solarbeam App" />
+        <meta name="apple-mobile-web-app-title" content="Arbitswap App" />
 
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
@@ -120,16 +120,16 @@ function MyApp({
         <meta name="theme-color" content="#F338C3" />
 
         <meta key="twitter:card" name="twitter:card" content="app" />
-        <meta key="twitter:title" name="twitter:title" content="Solarbeam App" />
-        <meta key="twitter:url" name="twitter:url" content="https://solarbeam.io" />
-        <meta key="twitter:description" name="twitter:description" content="Solarbeam - AMM on Moonriver." />
-        <meta key="twitter:image" name="twitter:image" content="https://solarbeam.io/icons/icon.png" />
-        <meta key="twitter:creator" name="twitter:creator" content="@solarbeam.io" />
+        <meta key="twitter:title" name="twitter:title" content="Arbitswap App" />
+        <meta key="twitter:url" name="twitter:url" content="https://arbitswap.org" />
+        <meta key="twitter:description" name="twitter:description" content="Arbitswap - AMM on Arbitrum_Sepolia." />
+        <meta key="twitter:image" name="twitter:image" content="https://arbitswap.org/icons/icon.png" />
+        <meta key="twitter:creator" name="twitter:creator" content="@arbitswap.org" />
         <meta key="og:type" property="og:type" content="website" />
-        <meta key="og:site_name" property="og:site_name" content="Solarbeam App" />
-        <meta key="og:url" property="og:url" content="https://solarbeam.io" />
-        <meta key="og:image" property="og:image" content="https://solarbeam.io/icon.png" />
-        <meta key="og:description" property="og:description" content="Solarbeam - AMM on Moonriver." />
+        <meta key="og:site_name" property="og:site_name" content="Arbitswap App" />
+        <meta key="og:url" property="og:url" content="https://arbitswap.org" />
+        <meta key="og:image" property="og:image" content="https://arbitswap.org/icon.png" />
+        <meta key="og:description" property="og:description" content="Arbitswap - AMM on Arbitrum_Sepolia." />
       </Head>
 
       <I18nProvider i18n={i18n} forceRenderOnLocaleChange={false}>

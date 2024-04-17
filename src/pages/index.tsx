@@ -4,8 +4,8 @@ export default function Dashboard() {
   return (
     <>
       <Head>
-        <title>Home | Solarbeam</title>
-        <meta name="description" content="Solarbeam" />
+        <title>Home | Arbitswap</title>
+        <meta name="description" content="Arbitswap" />
       </Head>
     </>
   )

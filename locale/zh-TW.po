@@ -35,7 +35,7 @@ msgstr ""
 #~ msgstr "創建新的市場"
 
 #: src/pages/locker/create/index.tsx:350
-msgid "- 0.1 MOVR to lock"
+msgid "- 0.1 ARB to lock"
 msgstr ""
 
 #: src/pages/locker/create/index.tsx:356
@@ -118,7 +118,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/features/swap/AdvancedSwapDetails.tsx:92
-msgid "A portion of each trade (0.25%) goes Solarbeam Treasury."
+msgid "A portion of each trade (0.25%) goes Arbitswap Treasury."
 msgstr ""
 
 #: src/features/lending/TradeReview.tsx:72
@@ -874,7 +874,7 @@ msgid "Harvest"
 msgstr ""
 
 #: src/features/farm/FarmListItemDetails.tsx:247
-msgid "Harvest {0} SOLAR"
+msgid "Harvest {0} ASWAP"
 msgstr ""
 
 #: src/pages/Yield/masterchefv1/InputGroup.tsx:126
@@ -1563,7 +1563,7 @@ msgid "Remove Liquidity"
 msgstr "移除流動性"
 
 #: src/pages/exchange/remove/[[...tokens]].tsx:715
-msgid "Remove liquidity of Solarbeam"
+msgid "Remove liquidity of Arbitswap"
 msgstr ""
 
 #: src/pages/exchange/swap/[[...tokens]].tsx:459
@@ -1634,7 +1634,7 @@ msgstr "路由經過這些代幣將給您的交易帶來最好的價格。"
 #~ msgstr ""
 
 #: src/components/YieldDetails/index.tsx:104
-msgid "SOLAR per $1000"
+msgid "ASWAP per $1000"
 msgstr ""
 
 #~ msgid "SUSHI Balance"
@@ -1726,7 +1726,7 @@ msgstr "可容忍滑點"
 #~ msgstr ""
 
 #: src/pages/exchange/swap/[[...tokens]].tsx:370
-msgid "Solarbeam"
+msgid "Arbitswap"
 msgstr ""
 
 #: src/features/lending/Button.tsx:28

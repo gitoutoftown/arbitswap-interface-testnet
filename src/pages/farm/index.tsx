@@ -14,9 +14,9 @@ import Button from '../../components/Button'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 import DoubleGlowShadow from '../../components/DoubleGlowShadow'
-import { SOLAR_ADDRESS, AVERAGE_BLOCK_TIME, WNATIVE } from '../../constants'
+import { ASWAP_ADDRESS, AVERAGE_BLOCK_TIME, WNATIVE } from '../../constants'
 import { POOLS } from '../../constants/farms'
-import SolarbeamLogo from '../../components/SolarbeamLogo'
+import ArbitswapLogo from '../../components/ArbitswapLogo'
 import { PriceContext } from '../../contexts/priceContext'
 import useMasterChef from '../../features/farm/useMasterChef'
 import { useTransactionAdder } from '../../state/transactions/hooks'
@@ -43,8 +43,8 @@ export default function Farm(): JSX.Element {
 
   const priceData = useContext(PriceContext)
 
-  const solarPrice = priceData?.['solar']
-  const movrPrice = priceData?.['movr']
+  const aswapPrice = priceData?.['aswap']
+  const arbPrice = priceData?.['arb']
 
   const tvlInfo = useTVL()
 
@@ -57,13 +57,13 @@ export default function Farm(): JSX.Element {
   }, 0)
 
   let summTvlVaults = vaults.reduce((previousValue, currentValue) => {
-    return previousValue + (currentValue.totalLp / 1e18) * solarPrice
+    return previousValue + (currentValue.totalLp / 1e18) * aswapPrice
   }, 0)
 
   const blocksPerDay = 86400 / Number(AVERAGE_BLOCK_TIME[chainId])
 
   const map = (pool) => {
-    pool.owner = 'Solarbeam'
+    pool.owner = 'Arbitswap'
     pool.balance = 0
 
     const pair = POOLS[chainId][pool.lpToken]
@@ -72,14 +72,14 @@ export default function Farm(): JSX.Element {
 
     function getRewards() {
       const rewardPerBlock =
-        ((pool.allocPoint / distributorInfo.totalAllocPoint) * distributorInfo.solarPerBlock) / 1e18
+        ((pool.allocPoint / distributorInfo.totalAllocPoint) * distributorInfo.aswapPerBlock) / 1e18
 
       const defaultReward = {
-        token: 'SOLAR',
-        icon: '/images/token/solar.png',
+        token: 'ASWAP',
+        icon: '/images/token/aswap.png',
         rewardPerBlock,
         rewardPerDay: rewardPerBlock * blocksPerDay,
-        rewardPrice: solarPrice,
+        rewardPrice: aswapPrice,
       }
 
       const defaultRewards = [defaultReward]
@@ -91,11 +91,11 @@ export default function Farm(): JSX.Element {
     function getTvl(pool) {
       let lpPrice = 0
       let decimals = 18
-      if (pool.lpToken == SOLAR_ADDRESS[chainId]) {
-        lpPrice = solarPrice
+      if (pool.lpToken == ASWAP_ADDRESS[chainId]) {
+        lpPrice = aswapPrice
         decimals = pair.token0?.decimals
       } else if (pool.lpToken.toLowerCase() == WNATIVE[chainId].toLowerCase()) {
-        lpPrice = movrPrice
+        lpPrice = arbPrice
       } else {
         lpPrice = 0
       }
@@ -139,9 +139,9 @@ export default function Farm(): JSX.Element {
 
   const FILTER = {
     my: (farm) => farm?.amount && !farm.amount.isZero(),
-    solar: (farm) => farm.pair.token0?.id == SOLAR_ADDRESS[chainId] || farm.pair.token1?.id == SOLAR_ADDRESS[chainId],
+    aswap: (farm) => farm.pair.token0?.id == ASWAP_ADDRESS[chainId] || farm.pair.token1?.id == ASWAP_ADDRESS[chainId],
     single: (farm) => !farm.pair.token1,
-    moonriver: (farm) => farm.pair.token0?.id == WNATIVE[chainId] || farm.pair.token1?.id == WNATIVE[chainId],
+    arbitrum_sepolia: (farm) => farm.pair.token0?.id == WNATIVE[chainId] || farm.pair.token1?.id == WNATIVE[chainId],
     stables: (farm) =>
       farm.pair.token0?.symbol == 'USDC' ||
       farm.pair.token1?.symbol == 'USDC' ||
@@ -164,7 +164,7 @@ export default function Farm(): JSX.Element {
   })
 
   const allStaked = positions.reduce((previousValue, currentValue) => {
-    return previousValue + (currentValue.pendingSolar / 1e18) * solarPrice
+    return previousValue + (currentValue.pendingAswap / 1e18) * aswapPrice
   }, 0)
 
   const valueStaked = positions.reduce((previousValue, currentValue) => {
@@ -178,15 +178,15 @@ export default function Farm(): JSX.Element {
   return (
     <>
       <Head>
-        <title>Farm | Solarbeam</title>
-        <meta key="description" name="description" content="Farm SOLAR" />
+        <title>Farm | Arbitswap</title>
+        <meta key="description" name="description" content="Farm ASWAP" />
       </Head>
 
       <div className="container px-0 mx-auto pb-6">
         <div className={`mb-2 pb-4 grid grid-cols-12 gap-4`}>
           <div className="flex justify-center items-center col-span-12 lg:justify">
             <Link href="/farm">
-              <SolarbeamLogo />
+              <ArbitswapLogo />
             </Link>
           </div>
         </div>
@@ -230,7 +230,7 @@ export default function Farm(): JSX.Element {
                               try {
                                 const tx = await harvest(parseInt(pos.id))
                                 addTransaction(tx, {
-                                  summary: `${i18n._(t`Harvest`)} SOLAR`,
+                                  summary: `${i18n._(t`Harvest`)} ASWAP`,
                                 })
                               } catch (error) {
                                 console.error(error)

@@ -25,7 +25,7 @@ import {
   LIFT,
   MATIC,
   MIR,
-  MOONRIVER,
+  ARBITRUM_SEPOLIA,
   NFTX,
   OKEX,
   PLAY,
@@ -102,7 +102,7 @@ const WRAPPED_NATIVE_ONLY: ChainTokenList = {
   [ChainId.OKEX]: [WNATIVE[ChainId.OKEX]],
   [ChainId.OKEX_TESTNET]: [WNATIVE[ChainId.OKEX_TESTNET]],
   [ChainId.CELO]: [WNATIVE[ChainId.CELO]],
-  [ChainId.MOONRIVER]: [WNATIVE[ChainId.MOONRIVER]],
+  [ChainId.ARBITRUM_SEPOLIA]: [WNATIVE[ChainId.ARBITRUM_SEPOLIA]],
 }
 
 // used to construct intermediary pairs for trading
@@ -140,7 +140,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     CELO.cEURO,
     CELO.cBTC,
   ],
-  [ChainId.MOONRIVER]: [...WRAPPED_NATIVE_ONLY[ChainId.MOONRIVER], MOONRIVER.DAI, MOONRIVER.USDC, MOONRIVER.SOLAR, MOONRIVER.BUSD],
+  [ChainId.ARBITRUM_SEPOLIA]: [...WRAPPED_NATIVE_ONLY[ChainId.ARBITRUM_SEPOLIA], ARBITRUM_SEPOLIA.DAI, ARBITRUM_SEPOLIA.USDC, ARBITRUM_SEPOLIA.ASWAP, ARBITRUM_SEPOLIA.BUSD],
 }
 
 export const ADDITIONAL_BASES: {
@@ -296,7 +296,7 @@ export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.CELO]: '',
   [ChainId.PALM]: '',
   [ChainId.PALM_TESTNET]: '',
-  [ChainId.MOONRIVER]: '0x049581aEB6Fe262727f290165C29BDAB065a1B68',
+  [ChainId.ARBITRUM_SEPOLIA]: '0x049581aEB6Fe262727f290165C29BDAB065a1B68',
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
@@ -326,7 +326,7 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.CELO]: '',
   [ChainId.PALM]: '',
   [ChainId.PALM_TESTNET]: '',
-  [ChainId.MOONRIVER]: '0xAA30eF758139ae4a7f798112902Bf6d65612045f',
+  [ChainId.ARBITRUM_SEPOLIA]: '0xAA30eF758139ae4a7f798112902Bf6d65612045f',
 }
 
 
