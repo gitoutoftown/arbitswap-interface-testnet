@@ -32,7 +32,7 @@ export const POOLS: AddressMap = {
         decimals: 18,
       },
       token1: {
-        id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
+        id: '0x6CA611eF9C2792b07a4D9817d4E983A6Bbe0455F',
         name: 'Arbitchain_Sepolia',
         symbol: 'ARB',
         decimals: 18,
@@ -49,10 +49,10 @@ export const POOLS: AddressMap = {
         decimals: 18,
       },
     },
-    '0x98878B06940aE243284CA214f92Bb71a2b032B8A': {
+    '0x6CA611eF9C2792b07a4D9817d4E983A6Bbe0455F': {
       id: 2,
       token0: {
-        id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
+        id: '0x6CA611eF9C2792b07a4D9817d4E983A6Bbe0455F',
         name: 'Wrapped Arbitchain_Sepolia',
         symbol: 'WARB',
         decimals: 18,
@@ -84,7 +84,7 @@ export const POOLS: AddressMap = {
         decimals: 18,
       },
       token1: {
-        id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
+        id: '0x6CA611eF9C2792b07a4D9817d4E983A6Bbe0455F',
         name: 'Arbitchain_Sepolia',
         symbol: 'ARB',
         decimals: 18,
@@ -110,7 +110,7 @@ export const POOLS: AddressMap = {
         decimals: 6,
       },
       token1: {
-        id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
+        id: '0x6CA611eF9C2792b07a4D9817d4E983A6Bbe0455F',
         name: 'Arbitchain_Sepolia',
         symbol: 'ARB',
         decimals: 18,
@@ -246,7 +246,7 @@ export const POOLS: AddressMap = {
         decimals: 18,
       },
       token1: {
-        id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
+        id: '0x6CA611eF9C2792b07a4D9817d4E983A6Bbe0455F',
         name: 'Arbitchain_Sepolia',
         symbol: 'ARB',
         decimals: 18,
@@ -263,7 +263,7 @@ export const POOLS: AddressMap = {
         decimals: 18,
       },
       token1: {
-        id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
+        id: '0x6CA611eF9C2792b07a4D9817d4E983A6Bbe0455F',
         name: 'Arbitchain_Sepolia',
         symbol: 'ARB',
         decimals: 18,
@@ -280,7 +280,7 @@ export const POOLS: AddressMap = {
         decimals: 18,
       },
       token1: {
-        id: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
+        id: '0x6CA611eF9C2792b07a4D9817d4E983A6Bbe0455F',
         name: 'Arbitchain_Sepolia',
         symbol: 'ARB',
         decimals: 18,
