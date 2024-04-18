@@ -7,7 +7,7 @@ import invariant from 'tiny-invariant'
 export class Arbitchain_Sepolia extends NativeCurrency {
   public readonly address: string
   protected constructor(chainId: number) {
-    super(chainId, 18, 'ARB', 'Arbitchain_Sepolia')
+    super(chainId, 18, 'ARB', 'Arbitrum')
   }
 
   public get wrapped(): Token {

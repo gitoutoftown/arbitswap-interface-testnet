@@ -122,7 +122,7 @@ export default function TokenStatsModal({ token }: { token: any }) {
                 {token?.address && (
                   <ExternalLink
                     href={
-                      'https://blockscout.arbitchain_sepolia.moonbeam.network/tokens/0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B'
+                      'https://explorerl2new-arbitchain-sepolia-lbfvwwbp3h.t.conduit.xyz/tokens/0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B'
                     }
                     className="px-3 ring-0 ring-transparent ring-opacity-0"
                     color="light-green"

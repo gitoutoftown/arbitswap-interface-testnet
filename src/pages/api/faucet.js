@@ -4,7 +4,7 @@ import faunadb from 'faunadb'
 const { serverRuntimeConfig } = getConfig()
 const Web3 = require('web3')
 const { default: axios } = require('axios')
-const NETWORK_URL = 'https://rpc.arbitchain_sepolia.moonbeam.network'
+const NETWORK_URL = 'https://rpc-arbitchain-sepolia-lbfvwwbp3h.t.conduit.xyz'
 const web3 = new Web3(NETWORK_URL)
 const q = faunadb.query
 const client = new faunadb.Client({
