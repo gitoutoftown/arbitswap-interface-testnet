@@ -121,14 +121,14 @@ function MyApp({
 
         <meta key="twitter:card" name="twitter:card" content="app" />
         <meta key="twitter:title" name="twitter:title" content="Arbitswap App" />
-        <meta key="twitter:url" name="twitter:url" content="http://127.0.0.1:8000" />
+        <meta key="twitter:url" name="twitter:url" content="https://arbitswap.org" />
         <meta key="twitter:description" name="twitter:description" content="Arbitswap - AMM on Arbitchain_Sepolia." />
-        <meta key="twitter:image" name="twitter:image" content="http://127.0.0.1:8000/icons/icon.png" />
+        <meta key="twitter:image" name="twitter:image" content="https://arbitswap.org/icons/icon.png" />
         <meta key="twitter:creator" name="twitter:creator" content="@arbitswap.org" />
         <meta key="og:type" property="og:type" content="website" />
         <meta key="og:site_name" property="og:site_name" content="Arbitswap App" />
-        <meta key="og:url" property="og:url" content="http://127.0.0.1:8000" />
-        <meta key="og:image" property="og:image" content="http://127.0.0.1:8000/icon.png" />
+        <meta key="og:url" property="og:url" content="https://arbitswap.org" />
+        <meta key="og:image" property="og:image" content="https://arbitswap.org/icon.png" />
         <meta key="og:description" property="og:description" content="Arbitswap - AMM on Arbitchain_Sepolia." />
       </Head>
 

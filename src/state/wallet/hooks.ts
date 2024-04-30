@@ -61,8 +61,9 @@ export function useTokenBalancesWithLoadingIndicator(
     () => tokens?.filter((t?: Token): t is Token => isAddress(t?.address) !== false) ?? [],
     [tokens]
   )
-
+  // console.log(validatedTokens)
   const validatedTokenAddresses = useMemo(() => validatedTokens.map((vt) => vt.address), [validatedTokens])
+  // console.log(validatedTokenAddresses)
   const ERC20Interface = new Interface(ERC20_ABI)
   const balances = useMultipleContractSingleData(
     validatedTokenAddresses,
@@ -70,9 +71,9 @@ export function useTokenBalancesWithLoadingIndicator(
     'balanceOf',
     [address],
     undefined,
-    100_000
+    0
   )
-
+// console.log(balances)
   const anyLoading: boolean = useMemo(() => balances.some((callState) => callState.loading), [balances])
 
   return [
@@ -118,8 +119,9 @@ export function useCurrencyBalances(
     () => currencies?.filter((currency): currency is Token => currency?.isToken ?? false) ?? [],
     [currencies]
   )
-
+  // console.log(tokens)
   const tokenBalances = useTokenBalances(account, tokens)
+  // console.log(tokenBalances)
   const containsETH: boolean = useMemo(() => currencies?.some((currency) => currency?.isNative) ?? false, [currencies])
   const ethBalance = useETHBalances(containsETH ? [account] : [])
 

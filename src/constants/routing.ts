@@ -296,7 +296,7 @@ export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.CELO]: '',
   [ChainId.PALM]: '',
   [ChainId.PALM_TESTNET]: '',
-  [ChainId.ARBITCHAIN_SEPOLIA]: '0x049581aEB6Fe262727f290165C29BDAB065a1B68',
+  [ChainId.ARBITCHAIN_SEPOLIA]: '0x67185218F8C88FF3549A141b3F254FF544B521Ca',
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
@@ -326,8 +326,8 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.CELO]: '',
   [ChainId.PALM]: '',
   [ChainId.PALM_TESTNET]: '',
-  [ChainId.ARBITCHAIN_SEPOLIA]: '0xAA30eF758139ae4a7f798112902Bf6d65612045f',
+  [ChainId.ARBITCHAIN_SEPOLIA]: '0x6CA611eF9C2792b07a4D9817d4E983A6Bbe0455F',
 }
 
 
-export const INIT_CODE_HASH: string = '0x9a100ded5f254443fbd264cb7e87831e398a8b642e061670a9bc35ba27293dbf'
+export const INIT_CODE_HASH: string = '0x22a5f68fe4f91c8cf0f149ae4481139187b3fff4db5b8f7b5311e45738992f8f'

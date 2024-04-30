@@ -93,7 +93,7 @@ const builders = {
   },
 
   arbitchain_sepolia: (chainName: string, data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
-    const prefix = 'https://explorerl2new-arbitchain-sepolia-lbfvwwbp3h.t.conduit.xyz/'
+    const prefix = 'https://explorerl2new-arbitchain-sepolia-irtfdsfvx4.t.conduit.xyz'
     switch (type) {
       case 'transaction':
         return `${prefix}/tx/${data}`

@@ -18,6 +18,7 @@ const Rinkeby = '/images/networks/rinkeby-network.jpg'
 const Ropsten = '/images/networks/ropsten-network.jpg'
 const xDai = '/images/networks/xdai-network.jpg'
 const Celo = '/images/networks/celo-network.jpg'
+
 export const NETWORK_ICON = {
   [ChainId.MAINNET]: Mainnet,
   [ChainId.ROPSTEN]: Ropsten,
@@ -62,7 +63,7 @@ export const NETWORK_LABEL: { [chainId in ChainId]?: string } = {
   [ChainId.BSC]: 'BSC',
   [ChainId.BSC_TESTNET]: 'BSC Testnet',
   [ChainId.MOONBEAM_TESTNET]: 'Moonbase',
-  [ChainId.ARBITCHAIN_SEPOLIA]: 'Arbitchain_Sepolia',
+  [ChainId.ARBITCHAIN_SEPOLIA]: 'Arbitchain Sepolia',
   [ChainId.AVALANCHE]: 'Avalanche',
   [ChainId.AVALANCHE_TESTNET]: 'Fuji',
   [ChainId.HECO]: 'HECO',

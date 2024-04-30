@@ -77,7 +77,7 @@ export default function TokenStatsModal({ token }: { token: any }) {
   const priceData = useContext(PriceContext)
   let tokenInfo = useTokenInfo(useAswapContract())
 
-  if (token.symbol == 'ARB') tokenInfo = { circulatingSupply: '1500000', burnt: '0', totalSupply: '0', vaults: '0' }
+  if (token.symbol == 'ARB') tokenInfo = { circulatingSupply: '2653939384', burnt: '0', totalSupply: '0', vaults: '0' }
 
   const price = formatNumberScale(priceData?.[token.symbol.toLowerCase()], true, 2)
 
@@ -122,7 +122,7 @@ export default function TokenStatsModal({ token }: { token: any }) {
                 {token?.address && (
                   <ExternalLink
                     href={
-                      'https://explorerl2new-arbitchain-sepolia-lbfvwwbp3h.t.conduit.xyz/tokens/0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B'
+                      'https://explorerl2new-arbitchain-sepolia-irtfdsfvx4.t.conduit.xyztokens/0x1B989692cd0Be0F883BBF52A206Be2A4b2d4B68a'
                     }
                     className="px-3 ring-0 ring-transparent ring-opacity-0"
                     color="light-green"

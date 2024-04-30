@@ -43,41 +43,41 @@ function AppBar(): JSX.Element {
                           {i18n._(t`Pool`)}
                         </a>
                       </NavLink>
-                      <NavLink href={'/farm'}>
+                      {/* <NavLink href={'/farm'}>
                         <a
                           id={`farm-nav-link`}
                           className="p-2 text-base text-primary hover:text-high-emphesis focus:text-high-emphesis whitespace-nowrap"
                         >
                           {i18n._(t`Farm`)}
                         </a>
-                      </NavLink>
-                      <NavLink href={'/vaults'}>
+                      </NavLink> */}
+                      {/* <NavLink href={'/vaults'}>
                         <a
                           id={`vaults-nav-link`}
                           className="p-2 text-base text-primary hover:text-high-emphesis focus:text-high-emphesis whitespace-nowrap"
                         >
                           {i18n._(t`Vaults`)}
                         </a>
-                      </NavLink>
-                      <NavLink href={'/locker'}>
+                      </NavLink> */}
+                      {/* <NavLink href={'/locker'}>
                         <a
                           id={`farm-nav-link`}
                           className="p-2 text-base text-primary hover:text-high-emphesis focus:text-high-emphesis whitespace-nowrap"
                         >
                           {i18n._(t`Locker`)}
                         </a>
-                      </NavLink>
-                      <NavLink href={'/bridge'}>
+                      </NavLink> */}
+                      {/* <NavLink href={'/bridge'}>
                         <a className="p-2 text-base text-primary hover:text-high-emphesis focus:text-high-emphesis whitespace-nowrap">
                           {i18n._(t`Bridge`)}
                         </a>
-                      </NavLink>
-                      <NavLink href={'/eclipse'}>
+                      </NavLink> */}
+                      {/* <NavLink href={'/eclipse'}>
                         <a className="p-2 text-base text-primary hover:text-high-emphesis focus:text-high-emphesis whitespace-nowrap">
                           {i18n._(t`Eclipse`)}
                         </a>
-                      </NavLink>
-                      <NavLink href="https://analytics.arbitswap.org">
+                      </NavLink> */}
+                      {/* <NavLink href="https://analytics.arbitswap.org">
                         <a
                           target="_blank"
                           id={`swap-nav-link`}
@@ -85,23 +85,23 @@ function AppBar(): JSX.Element {
                         >
                           {i18n._(t`Analytics`)}
                         </a>
-                      </NavLink>
+                      </NavLink> */}
                     </div>
                   </div>
                 </div>
 
                 <div className="fixed bottom-0 left-0 z-10 flex flex-row items-center justify-center w-full p-4 lg:w-auto bg-dark-1000 lg:relative lg:p-0 lg:bg-transparent">
                   <div className="flex items-center justify-between w-full space-x-2 sm:justify-end">
-                    {chainId && [ChainId.ARBITCHAIN_SEPOLIA].includes(chainId) && (
+                    {/* {chainId && [ChainId.ARBITCHAIN_SEPOLIA].includes(chainId) && (
                       <div className="w-auto flex items-center rounded mr-1 bg-dark-800 shadow-sm text-primary text-xs hover:bg-dark-700 whitespace-nowrap text-xs font-bold cursor-pointer select-none pointer-events-auto hidden sm:block">
                         <TokenStats token="ARB" />
                       </div>
-                    )}
-                    {chainId && [ChainId.ARBITCHAIN_SEPOLIA].includes(chainId) && (
+                    )} */}
+                    {/* {chainId && [ChainId.ARBITCHAIN_SEPOLIA].includes(chainId) && (
                       <div className="w-auto flex items-center rounded mr-1 bg-dark-800 shadow-sm text-primary text-xs hover:bg-dark-700 whitespace-nowrap text-xs font-bold cursor-pointer select-none pointer-events-auto">
                         <TokenStats token="ASWAP" />
                       </div>
-                    )}
+                    )} */}
                     <div className="w-auto flex items-center rounded bg-transparent shadow-sm text-primary text-xs hover:bg-dark-900 whitespace-nowrap text-xs font-bold cursor-pointer select-none pointer-events-auto">
                       <Web3Status />
                     </div>
@@ -168,7 +168,7 @@ function AppBar(): JSX.Element {
                     {i18n._(t`Pool`)}
                   </a>
                 </Link>
-                <Link href={'/farm'}>
+                {/* <Link href={'/farm'}>
                   <a
                     id={`farm-nav-link`}
                     className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
@@ -209,7 +209,7 @@ function AppBar(): JSX.Element {
                   >
                     {i18n._(t`Analytics`)}
                   </a>
-                </Link>
+                </Link> */}
               </div>
             </Popover.Panel>
           </>

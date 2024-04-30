@@ -18,7 +18,7 @@ module.exports = withBundleAnalyzer(
       disable: true,
     },
     images: {
-      domains: ['127.0.0.1','localhost:8000','arbitswap.org', 'res.cloudinary.com', 'raw.githubusercontent.com', 'logos.covalenthq.com'],
+      domains: ['127.0.0.1','https://arbitswap.org','arbitswap.org', 'res.cloudinary.com', 'raw.githubusercontent.com', 'logos.covalenthq.com'],
     },
     reactStrictMode: true,
     serverRuntimeConfig: {

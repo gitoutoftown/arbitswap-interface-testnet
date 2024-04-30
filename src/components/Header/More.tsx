@@ -13,39 +13,45 @@ const items = (i18n: I18n) => [
   {
     name: i18n._(t`Docs`),
     description: i18n._(t`Documentation for Arbitswap.org users`),
-    href: 'https://docs.arbitswap.org',
+    href: 'https://docs.arbitchain.org',
     external: true,
   },
   {
-    name: i18n._(t`Github`),
-    description: i18n._(t`We're supporters of Open Source`),
-    href: 'https://github.com/arbitswaporg',
+    name: i18n._(t`Arbitchain`),
+    description: i18n._(t`Official website for Arbitchain`),
+    href: 'https://arbitchain.org',
     external: true,
   },
-  {
-    name: i18n._(t`Telegram`),
-    description: i18n._(t`Join the community on Telegram`),
-    href: 'https://t.me/arbitswaporg',
-    external: true,
-  },
-  {
-    name: i18n._(t`Discord`),
-    description: i18n._(t`Join the community on Discord`),
-    href: 'https://discord.gg/arbitswap',
-    external: true,
-  },
-  {
-    name: i18n._(t`Twitter`),
-    description: i18n._(t`Follow us on Twitter`),
-    href: 'https://twitter.com/arbitswaporg',
-    external: true,
-  },
-  {
-    name: i18n._(t`Medium`),
-    description: i18n._(t`Follow us on Medium`),
-    href: 'https://arbitswap.medium.com',
-    external: true,
-  },
+  // {
+  //   name: i18n._(t`Github`),
+  //   description: i18n._(t`We're supporters of Open Source`),
+  //   href: 'https://github.com/arbitswaporg',
+  //   external: true,
+  // },
+  // {
+  //   name: i18n._(t`Telegram`),
+  //   description: i18n._(t`Join the community on Telegram`),
+  //   href: 'https://t.me/arbitswaporg',
+  //   external: true,
+  // },
+  // {
+  //   name: i18n._(t`Discord`),
+  //   description: i18n._(t`Join the community on Discord`),
+  //   href: 'https://discord.gg/arbitswap',
+  //   external: true,
+  // },
+  // {
+  //   name: i18n._(t`Twitter`),
+  //   description: i18n._(t`Follow us on Twitter`),
+  //   href: 'https://twitter.com/arbitswaporg',
+  //   external: true,
+  // },
+  // {
+  //   name: i18n._(t`Medium`),
+  //   description: i18n._(t`Follow us on Medium`),
+  //   href: 'https://arbitswap.medium.com',
+  //   external: true,
+  // },
 ]
 
 export default function Menu() {

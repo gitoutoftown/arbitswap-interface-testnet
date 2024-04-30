@@ -44,6 +44,7 @@ export default function useWrapCallback(
     if (!weth) return NOT_APPLICABLE
 
     const hasInputAmount = Boolean(inputAmount?.greaterThan('0'))
+    console.log(balance)
     const sufficientBalance = inputAmount && balance && !balance.lessThan(inputAmount)
 
     if (inputCurrency.isNative && weth.equals(outputCurrency)) {

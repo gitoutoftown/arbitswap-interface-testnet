@@ -4,7 +4,7 @@ import faunadb from 'faunadb'
 const { serverRuntimeConfig } = getConfig()
 const Web3 = require('web3')
 const { default: axios } = require('axios')
-const NETWORK_URL = 'https://rpc-arbitchain-sepolia-lbfvwwbp3h.t.conduit.xyz'
+const NETWORK_URL = 'https://rpc-arbitchain-sepolia-irtfdsfvx4.t.conduit.xyz'
 const web3 = new Web3(NETWORK_URL)
 const q = faunadb.query
 const client = new faunadb.Client({
@@ -126,8 +126,8 @@ async function removeFromBlackList(addr) {
 
 async function checkBridgeUsage(address) {
   const bridges = {
-    ETH: `https://bridgeapi.anyswap.exchange/v2/swapin/history/${address}/421990/1/allv2?offset=0&limit=1`,
-    BSC: `https://bridgeapi.anyswap.exchange/v2/swapin/history/${address}/421990/56/allv2?offset=0&limit=1`,
+    ETH: `https://bridgeapi.anyswap.exchange/v2/swapin/history/${address}/421993/1/allv2?offset=0&limit=1`,
+    BSC: `https://bridgeapi.anyswap.exchange/v2/swapin/history/${address}/421993/56/allv2?offset=0&limit=1`,
   }
 
   for (let net in bridges) {

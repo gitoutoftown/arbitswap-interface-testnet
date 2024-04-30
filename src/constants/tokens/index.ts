@@ -53,7 +53,7 @@ export const OKEX: { [key: string]: Token } = {
 export const ARBITCHAIN_SEPOLIA: { [key: string]: Token } = {
   DAI: new Token(ChainId.ARBITCHAIN_SEPOLIA, '0x80A16016cC4A2E6a2CACA8a4a498b1699fF0f844', 18, 'DAI', 'Dai Stablecoin'),
   USDC: new Token(ChainId.ARBITCHAIN_SEPOLIA, '0xE3F5a90F9cb311505cd691a46596599aA1A0AD7D', 6, 'USDC', 'USD Coin'),
-  ASWAP: new Token(ChainId.ARBITCHAIN_SEPOLIA, '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B', 18, 'ASWAP', 'Arbitswap Token'),
+  ASWAP: new Token(ChainId.ARBITCHAIN_SEPOLIA, '0x1B989692cd0Be0F883BBF52A206Be2A4b2d4B68a', 18, 'ASWAP', 'Arbitswap Token'),
   BUSD: new Token(ChainId.ARBITCHAIN_SEPOLIA, '0x5D9ab5522c64E1F6ef5e3627ECCc093f56167818', 18, 'BUSD', 'Binance-Peg BUSD Token'),
 }
 
@@ -219,7 +219,7 @@ export const ASWAP_ADDRESS = {
   [ChainId.CELO]: '',
   [ChainId.PALM]: '',
   [ChainId.PALM_TESTNET]: '',
-  [ChainId.ARBITCHAIN_SEPOLIA]: '0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B',
+  [ChainId.ARBITCHAIN_SEPOLIA]: '0x1B989692cd0Be0F883BBF52A206Be2A4b2d4B68a',
 }
 
 export const ASWAP: ChainTokenMap = {
@@ -230,10 +230,10 @@ export const WETH9_EXTENDED: { [chainId: number]: Token } = {
   ...WETH9,
   [SupportedChainId.ARBITCHAIN_SEPOLIA]: new Token(
     ChainId.ARBITCHAIN_SEPOLIA,
-    '0x6CA611eF9C2792b07a4D9817d4E983A6Bbe0455F',
+    '0x3CB9F420Ac7a4A561C4593B5183D0Cd6c2E77faF',
     18,
-    'ARB',
-    'Arbitchain_Sepolia'
+    'WARB',
+    'Wrapped Arbitrum'
   ),
 }
 

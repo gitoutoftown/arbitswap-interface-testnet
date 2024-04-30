@@ -148,6 +148,8 @@ export function useDerivedSwapInfo(doArcher = false): {
   } = useSwapState()
 
   const inputCurrency = useCurrency(inputCurrencyId)
+  // console.log(inputCurrency)
+  // console.log(inputCurrency)
 
   const outputCurrency = useCurrency(outputCurrencyId)
 
@@ -159,6 +161,7 @@ export function useDerivedSwapInfo(doArcher = false): {
     inputCurrency ?? undefined,
     outputCurrency ?? undefined,
   ])
+  // console.log(relevantTokenBalances)
 
   const isExactIn: boolean = independentField === Field.INPUT
   const parsedAmount = tryParseAmount(typedValue, (isExactIn ? inputCurrency : outputCurrency) ?? undefined)
@@ -182,7 +185,7 @@ export function useDerivedSwapInfo(doArcher = false): {
     [Field.INPUT]: inputCurrency ?? undefined,
     [Field.OUTPUT]: outputCurrency ?? undefined,
   }
-
+// console.log(currencies)
   let inputError: string | undefined
   if (!account) {
     inputError = 'Connect Wallet'

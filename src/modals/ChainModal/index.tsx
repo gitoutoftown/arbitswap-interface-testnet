@@ -51,15 +51,15 @@ export const SUPPORTED_NETWORKS: {
     blockExplorerUrls: ['https://bscscan.com'],
   },
   [ChainId.ARBITCHAIN_SEPOLIA]: {
-    chainId: '0x67066',
+    chainId: '0x67069',
     chainName: 'Arbitchain Sepolia',
     nativeCurrency: {
       name: 'Arbitrum',
       symbol: 'ARB',
       decimals: 18,
     },
-    rpcUrls: ['https://rpc-arbitchain-sepolia-lbfvwwbp3h.t.conduit.xyz'],
-    blockExplorerUrls: ['https://explorerl2new-arbitchain-sepolia-lbfvwwbp3h.t.conduit.xyz/'],
+    rpcUrls: ['https://rpc-arbitchain-sepolia-irtfdsfvx4.t.conduit.xyz'],
+    blockExplorerUrls: ['https://explorerl2new-arbitchain-sepolia-irtfdsfvx4.t.conduit.xyz'],
   },
 }
 

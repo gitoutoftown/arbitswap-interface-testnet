@@ -191,10 +191,10 @@ export const WETH9: { [chainId: number]: Token } = {
   ),
   [ChainId.ARBITCHAIN_SEPOLIA]: new Token(
     ChainId.ARBITCHAIN_SEPOLIA,
-    '0x6CA611eF9C2792b07a4D9817d4E983A6Bbe0455F',
+    '0x3CB9F420Ac7a4A561C4593B5183D0Cd6c2E77faF',
     18,
     'WARB',
-    'Wrapped ARB'
+    'Wrapped Arbitrum'
   ),
 }
 
@@ -334,9 +334,9 @@ export const WNATIVE: { [chainId: number]: Token } = {
   ),
   [ChainId.ARBITCHAIN_SEPOLIA]: new Token(
     ChainId.ARBITCHAIN_SEPOLIA,
-    '0x6CA611eF9C2792b07a4D9817d4E983A6Bbe0455F',
+    '0x3CB9F420Ac7a4A561C4593B5183D0Cd6c2E77faF',
     18,
     'WARB',
-    'Wrapped ARB'
+    'Wrapped Arbitrum'
   ),
 }
